@@ -1,0 +1,8 @@
+12:04:25 **** Build of configuration Default for project build_this_first ****
+make all 
+cp ../common/src/*  ../libpixy_m0/src
+cp ../common/src/*  ../libpixy_m4/src
+cp ../../common/src/*  ../libpixy_m4/src
+
+12:04:25 Build Finished (took 599ms)
+

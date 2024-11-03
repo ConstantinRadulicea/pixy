@@ -1,0 +1,1035 @@
+12:04:25 **** Build of configuration Default for project build_this_first ****
+make all 
+cp ../common/src/*  ../libpixy_m0/src
+cp ../common/src/*  ../libpixy_m4/src
+cp ../../common/src/*  ../libpixy_m4/src
+12:04:45 **** Clean-only build of configuration Release for project libpixy_m0 ****
+make -r clean 
+make: *** No rule to make target `clean'.  Stop.
+12:04:46 **** Build of configuration Release for project libpixy_m0 ****
+make -r all 
+Building file: ../src/chirp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/chirp.d" -MT"src/chirp.o" -MT"src/chirp.d" -o "src/chirp.o" "../src/chirp.c"
+Finished building: ../src/chirp.c
+ 
+Building file: ../src/debug.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/debug.d" -MT"src/debug.o" -MT"src/debug.d" -o "src/debug.o" "../src/debug.c"
+Finished building: ../src/debug.c
+ 
+Building file: ../src/debug_frmwrk.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/debug_frmwrk.d" -MT"src/debug_frmwrk.o" -MT"src/debug_frmwrk.d" -o "src/debug_frmwrk.o" "../src/debug_frmwrk.c"
+Finished building: ../src/debug_frmwrk.c
+ 
+Building file: ../src/exec_m0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/exec_m0.d" -MT"src/exec_m0.o" -MT"src/exec_m0.d" -o "src/exec_m0.o" "../src/exec_m0.c"
+Finished building: ../src/exec_m0.c
+ 
+Building file: ../src/frame_m0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/frame_m0.d" -MT"src/frame_m0.o" -MT"src/frame_m0.d" -o "src/frame_m0.o" "../src/frame_m0.c"
+Finished building: ../src/frame_m0.c
+ 
+Building file: ../src/ipc_mbx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/ipc_mbx.d" -MT"src/ipc_mbx.o" -MT"src/ipc_mbx.d" -o "src/ipc_mbx.o" "../src/ipc_mbx.c"
+../src/ipc_mbx.c: In function 'IPC_resetMbxFlag':
+../src/ipc_mbx.c:55:4: warning: 'wasMasked' is used uninitialized in this function [-Wuninitialized]
+  if(!wasMasked)  __enable_irq();\
+    ^
+../src/ipc_mbx.c:58:27: note: 'wasMasked' was declared here
+  #define IRQ_LOCK_KEY int wasMasked;
+                           ^
+../src/ipc_mbx.c:82:3: note: in expansion of macro 'IRQ_LOCK_KEY'
+   IRQ_LOCK_KEY
+   ^
+../src/ipc_mbx.c: In function '_setMbxStatus':
+../src/ipc_mbx.c:55:4: warning: 'wasMasked' is used uninitialized in this function [-Wuninitialized]
+  if(!wasMasked)  __enable_irq();\
+    ^
+../src/ipc_mbx.c:58:27: note: 'wasMasked' was declared here
+  #define IRQ_LOCK_KEY int wasMasked;
+                           ^
+../src/ipc_mbx.c:104:2: note: in expansion of macro 'IRQ_LOCK_KEY'
+  IRQ_LOCK_KEY
+  ^
+Finished building: ../src/ipc_mbx.c
+ 
+Building file: ../src/lpc43xx_adc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/lpc43xx_adc.d" -MT"src/lpc43xx_adc.o" -MT"src/lpc43xx_adc.d" -o "src/lpc43xx_adc.o" "../src/lpc43xx_adc.c"
+Finished building: ../src/lpc43xx_adc.c
+ 
+Building file: ../src/lpc43xx_cgu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/lpc43xx_cgu.d" -MT"src/lpc43xx_cgu.o" -MT"src/lpc43xx_cgu.d" -o "src/lpc43xx_cgu.o" "../src/lpc43xx_cgu.c"
+Finished building: ../src/lpc43xx_cgu.c
+ 
+Building file: ../src/lpc43xx_i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/lpc43xx_i2c.d" -MT"src/lpc43xx_i2c.o" -MT"src/lpc43xx_i2c.d" -o "src/lpc43xx_i2c.o" "../src/lpc43xx_i2c.c"
+Finished building: ../src/lpc43xx_i2c.c
+ 
+Building file: ../src/lpc43xx_scu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/lpc43xx_scu.d" -MT"src/lpc43xx_scu.o" -MT"src/lpc43xx_scu.d" -o "src/lpc43xx_scu.o" "../src/lpc43xx_scu.c"
+Finished building: ../src/lpc43xx_scu.c
+ 
+Building file: ../src/lpc43xx_ssp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/lpc43xx_ssp.d" -MT"src/lpc43xx_ssp.o" -MT"src/lpc43xx_ssp.d" -o "src/lpc43xx_ssp.o" "../src/lpc43xx_ssp.c"
+Finished building: ../src/lpc43xx_ssp.c
+ 
+Building file: ../src/lpc43xx_uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/lpc43xx_uart.d" -MT"src/lpc43xx_uart.o" -MT"src/lpc43xx_uart.d" -o "src/lpc43xx_uart.o" "../src/lpc43xx_uart.c"
+Finished building: ../src/lpc43xx_uart.c
+ 
+Building file: ../src/qqueue.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/qqueue.d" -MT"src/qqueue.o" -MT"src/qqueue.d" -o "src/qqueue.o" "../src/qqueue.c"
+Finished building: ../src/qqueue.c
+ 
+Building file: ../src/rls_m0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/rls_m0.d" -MT"src/rls_m0.o" -MT"src/rls_m0.d" -o "src/rls_m0.o" "../src/rls_m0.c"
+../src/rls_m0.c: In function 'lineProcessedRL1A':
+../src/rls_m0.c:371:1: warning: control reaches end of non-void function [-Wreturn-type]
+ } 
+ ^
+Finished building: ../src/rls_m0.c
+ 
+Building file: ../src/smlink.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/smlink.d" -MT"src/smlink.o" -MT"src/smlink.d" -o "src/smlink.o" "../src/smlink.c"
+Finished building: ../src/smlink.c
+ 
+Building file: ../src/system_LPC43xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M0 -DCR_PRINTF_CHAR -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/system_LPC43xx.d" -MT"src/system_LPC43xx.o" -MT"src/system_LPC43xx.d" -o "src/system_LPC43xx.o" "../src/system_LPC43xx.c"
+Finished building: ../src/system_LPC43xx.c
+ 
+Building target: liblibpixy_m0.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "liblibpixy_m0.a"  ./src/chirp.o ./src/debug.o ./src/debug_frmwrk.o ./src/exec_m0.o ./src/frame_m0.o ./src/ipc_mbx.o ./src/lpc43xx_adc.o ./src/lpc43xx_cgu.o ./src/lpc43xx_i2c.o ./src/lpc43xx_scu.o ./src/lpc43xx_ssp.o ./src/lpc43xx_uart.o ./src/qqueue.o ./src/rls_m0.o ./src/smlink.o ./src/system_LPC43xx.o   
+c:\nxp\LPCXpresso_7.6.2_326\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating liblibpixy_m0.a
+Finished building target: liblibpixy_m0.a
+ 
+/usr/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "liblibpixy_m0.a" ; # arm-none-eabi-objdump -h -S "liblibpixy_m0.a" >"liblibpixy_m0.lss"
+   text	   data	    bss	    dec	    hex	filename
+   4960	      0	     32	   4992	   1380	chirp.o (ex liblibpixy_m0.a)
+     40	      0	      0	     40	     28	debug.o (ex liblibpixy_m0.a)
+   1704	      0	      0	   1704	    6a8	debug_frmwrk.o (ex liblibpixy_m0.a)
+    280	      9	      2	    291	    123	exec_m0.o (ex liblibpixy_m0.a)
+   1656	      0	      0	   1656	    678	frame_m0.o (ex liblibpixy_m0.a)
+   1744	      0	      0	   1744	    6d0	ipc_mbx.o (ex liblibpixy_m0.a)
+    788	      0	      0	    788	    314	lpc43xx_adc.o (ex liblibpixy_m0.a)
+   4824	     68	      0	   4892	   131c	lpc43xx_cgu.o (ex liblibpixy_m0.a)
+   4016	      0	     52	   4068	    fe4	lpc43xx_i2c.o (ex liblibpixy_m0.a)
+     92	      0	      0	     92	     5c	lpc43xx_scu.o (ex liblibpixy_m0.a)
+   1728	      0	      0	   1728	    6c0	lpc43xx_ssp.o (ex liblibpixy_m0.a)
+   2612	      0	      0	   2612	    a34	lpc43xx_uart.o (ex liblibpixy_m0.a)
+    168	      4	      0	    172	     ac	qqueue.o (ex liblibpixy_m0.a)
+    828	      0	      4	    832	    340	rls_m0.o (ex liblibpixy_m0.a)
+    244	      0	      0	    244	     f4	smlink.o (ex liblibpixy_m0.a)
+      8	      0	      0	      8	      8	system_LPC43xx.o (ex liblibpixy_m0.a)
+ 
+12:05:29 **** Clean-only build of configuration Release for project libpixy_m4 ****
+make -r clean 
+make: *** No rule to make target `clean'.  Stop.
+12:05:29 **** Build of configuration Release for project libpixy_m4 ****
+make -r all 
+Building file: ../src/blob.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/blob.d" -MT"src/blob.o" -MT"src/blob.d" -o "src/blob.o" "../src/blob.cpp"
+Finished building: ../src/blob.cpp
+ 
+Building file: ../src/blobs.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/blobs.d" -MT"src/blobs.o" -MT"src/blobs.d" -o "src/blobs.o" "../src/blobs.cpp"
+../src/blobs.cpp: In member function 'void Blobs::cleanup(BlobA**, int16_t*)':
+../src/blobs.cpp:826:37: warning: 'maxEqualArea' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         if (lowerArea<=maxEqualArea && maxEqualArea<=upperArea)
+                                     ^
+../src/blobs.cpp: In member function 'int Blobs::runlengthAnalysis()':
+../src/blobs.cpp:187:102: warning: 'segmentEndCol' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             res = handleSegment(segmentSig, row, segmentStartCol-1, segmentEndCol - segmentStartCol+1);
+                                                                                                      ^
+../src/blobs.cpp:187:102: warning: 'segmentStartCol' may be used uninitialized in this function [-Wmaybe-uninitialized]
+../src/blobs.cpp:166:29: warning: 'prevStartCol' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             merge = startCol-prevStartCol<=5 && prevSig==sig;
+                             ^
+../src/blobs.cpp:172:36: warning: 'prevSig' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             else if (segmentSig!=0 && (segmentSig!=sig || !merge))
+                                    ^
+Finished building: ../src/blobs.cpp
+ 
+Building file: ../src/calc.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/calc.d" -MT"src/calc.o" -MT"src/calc.d" -o "src/calc.o" "../src/calc.cpp"
+Finished building: ../src/calc.cpp
+ 
+Building file: ../src/camera.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/camera.d" -MT"src/camera.o" -MT"src/camera.d" -o "src/camera.o" "../src/camera.cpp"
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/camera.cpp: In function 'void cam_setRegs(const uint8_t*, int)':
+../src/camera.cpp:571:17: warning: unused variable 'q' [-Wunused-variable]
+    volatile int q = 0;
+                 ^
+Finished building: ../src/camera.cpp
+ 
+Building file: ../src/chirp.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/chirp.d" -MT"src/chirp.o" -MT"src/chirp.d" -o "src/chirp.o" "../src/chirp.cpp"
+../src/chirp.cpp: In member function 'int Chirp::recvFull(uint8_t*, ChirpProc*, bool)':
+../src/chirp.cpp:1274:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (res<sizeof(uint32_t))
+                ^
+../src/chirp.cpp: In member function 'int Chirp::recvData()':
+../src/chirp.cpp:1342:9: warning: 'res' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         if (res<(int)chunk+3)
+         ^
+Finished building: ../src/chirp.cpp
+ 
+Building file: ../src/colorlut.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/colorlut.d" -MT"src/colorlut.o" -MT"src/colorlut.d" -o "src/colorlut.o" "../src/colorlut.cpp"
+In file included from ../../../common/inc/colorlut.h:19:0,
+                 from ../src/colorlut.cpp:22:
+../../../common/inc/simplevector.h: In member function 'int SimpleVector<Object>::push_back(const Object&) [with Object = Point16]':
+../../../common/inc/simplevector.h:36:9: warning: assuming signed overflow does not occur when assuming that (X + c) < X is always false [-Wstrict-overflow]
+         if(newCapacity < m_size)
+         ^
+Finished building: ../src/colorlut.cpp
+ 
+Building file: ../src/debug_frmwrk.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/debug_frmwrk.d" -MT"src/debug_frmwrk.o" -MT"src/debug_frmwrk.d" -o "src/debug_frmwrk.o" "../src/debug_frmwrk.c"
+Finished building: ../src/debug_frmwrk.c
+ 
+Building file: ../src/flash.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/flash.d" -MT"src/flash.o" -MT"src/flash.d" -o "src/flash.o" "../src/flash.cpp"
+In file included from ../src/flash.cpp:17:0:
+../src/flash.cpp: In function 'int32_t flash_erase(uint32_t, uint32_t)':
+../src/flash.cpp:33:36: warning: suggest parentheses around '+' in operand of '&' [-Wparentheses]
+   addrTemp = FLASH_SECTOR_MASK(addr+i);
+                                    ^
+C:\Programming\pixy\src\device\libpixy_m4\inc/flash.h:23:33: note: in definition of macro 'FLASH_SECTOR_MASK'
+ #define FLASH_SECTOR_MASK(a)   (a & (~(FLASH_SECTOR_SIZE-1)))
+                                 ^
+Finished building: ../src/flash.cpp
+ 
+Building file: ../src/fpu_init.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/fpu_init.d" -MT"src/fpu_init.o" -MT"src/fpu_init.d" -o "src/fpu_init.o" "../src/fpu_init.c"
+Finished building: ../src/fpu_init.c
+ 
+Building file: ../src/ipc_mbx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/ipc_mbx.d" -MT"src/ipc_mbx.o" -MT"src/ipc_mbx.d" -o "src/ipc_mbx.o" "../src/ipc_mbx.c"
+Finished building: ../src/ipc_mbx.c
+ 
+Building file: ../src/led.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/led.d" -MT"src/led.o" -MT"src/led.d" -o "src/led.o" "../src/led.cpp"
+../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ }; 
+ ^
+../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+Finished building: ../src/led.cpp
+ 
+Building file: ../src/lpc43xx_adc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/lpc43xx_adc.d" -MT"src/lpc43xx_adc.o" -MT"src/lpc43xx_adc.d" -o "src/lpc43xx_adc.o" "../src/lpc43xx_adc.c"
+../src/lpc43xx_adc.c: In function 'ADC_Init':
+../src/lpc43xx_adc.c:109:15: warning: 'temp' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  temp = ((temp*2 + ADCbitrate) / (ADCbitrate*2)) - 1;//get the round value by fomular: (2*A + B)/(2*B)
+               ^
+Finished building: ../src/lpc43xx_adc.c
+ 
+Building file: ../src/lpc43xx_cgu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/lpc43xx_cgu.d" -MT"src/lpc43xx_cgu.o" -MT"src/lpc43xx_cgu.d" -o "src/lpc43xx_cgu.o" "../src/lpc43xx_cgu.c"
+Finished building: ../src/lpc43xx_cgu.c
+ 
+Building file: ../src/lpc43xx_i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/lpc43xx_i2c.d" -MT"src/lpc43xx_i2c.o" -MT"src/lpc43xx_i2c.d" -o "src/lpc43xx_i2c.o" "../src/lpc43xx_i2c.c"
+Finished building: ../src/lpc43xx_i2c.c
+ 
+Building file: ../src/lpc43xx_scu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/lpc43xx_scu.d" -MT"src/lpc43xx_scu.o" -MT"src/lpc43xx_scu.d" -o "src/lpc43xx_scu.o" "../src/lpc43xx_scu.c"
+Finished building: ../src/lpc43xx_scu.c
+ 
+Building file: ../src/lpc43xx_ssp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/lpc43xx_ssp.d" -MT"src/lpc43xx_ssp.o" -MT"src/lpc43xx_ssp.d" -o "src/lpc43xx_ssp.o" "../src/lpc43xx_ssp.c"
+../src/lpc43xx_ssp.c: In function 'SSP_ReadWrite':
+../src/lpc43xx_ssp.c:390:14: warning: 'wdata16' may be used uninitialized in this function [-Wmaybe-uninitialized]
+       wdata16++;
+              ^
+../src/lpc43xx_ssp.c:416:14: warning: 'rdata16' may be used uninitialized in this function [-Wmaybe-uninitialized]
+       rdata16++;
+              ^
+../src/lpc43xx_ssp.c:386:13: warning: 'wdata8' may be used uninitialized in this function [-Wmaybe-uninitialized]
+       wdata8++;
+             ^
+../src/lpc43xx_ssp.c:413:13: warning: 'rdata8' may be used uninitialized in this function [-Wmaybe-uninitialized]
+       rdata8++;
+             ^
+Finished building: ../src/lpc43xx_ssp.c
+ 
+Building file: ../src/lpc43xx_uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/lpc43xx_uart.d" -MT"src/lpc43xx_uart.o" -MT"src/lpc43xx_uart.d" -o "src/lpc43xx_uart.o" "../src/lpc43xx_uart.c"
+Finished building: ../src/lpc43xx_uart.c
+ 
+Building file: ../src/misc.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/misc.d" -MT"src/misc.o" -MT"src/misc.d" -o "src/misc.o" "../src/misc.cpp"
+Finished building: ../src/misc.cpp
+ 
+Building file: ../src/param.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/param.d" -MT"src/param.o" -MT"src/param.d" -o "src/param.o" "../src/param.cpp"
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/param.cpp: In function 'uint32_t prm_nextFree()':
+../src/param.cpp:311:10: warning: converting to non-pointer type 'uint32_t {aka long unsigned int}' from NULL [-Wconversion-null]
+   return NULL;
+          ^
+../src/param.cpp: In function 'int prm_add(const char*, uint32_t, const char*, ...)':
+../src/param.cpp:490:32: warning: NULL used in arithmetic [-Wpointer-arith]
+  if ((freeLoc=prm_nextFree())==NULL)
+                                ^
+In file included from ../src/param.cpp:23:0:
+../../../common/inc/simplevector.h: In function 'int prm_setShadowCallback(const char*, ShadowCallback)':
+../../../common/inc/simplevector.h:36:9: warning: assuming signed overflow does not occur when assuming that (X + c) < X is always false [-Wstrict-overflow]
+         if(newCapacity < m_size)
+         ^
+Finished building: ../src/param.cpp
+ 
+Building file: ../src/pixy_init.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/pixy_init.d" -MT"src/pixy_init.o" -MT"src/pixy_init.d" -o "src/pixy_init.o" "../src/pixy_init.cpp"
+Finished building: ../src/pixy_init.cpp
+ 
+Building file: ../src/platform_config.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/platform_config.d" -MT"src/platform_config.o" -MT"src/platform_config.d" -o "src/platform_config.o" "../src/platform_config.c"
+Finished building: ../src/platform_config.c
+ 
+Building file: ../src/power.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/power.d" -MT"src/power.o" -MT"src/power.d" -o "src/power.o" "../src/power.cpp"
+../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ }; 
+ ^
+../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+Finished building: ../src/power.cpp
+ 
+Building file: ../src/qqueue.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/qqueue.d" -MT"src/qqueue.o" -MT"src/qqueue.d" -o "src/qqueue.o" "../src/qqueue.cpp"
+Finished building: ../src/qqueue.cpp
+ 
+Building file: ../src/rcservo.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/rcservo.d" -MT"src/rcservo.o" -MT"src/rcservo.d" -o "src/rcservo.o" "../src/rcservo.cpp"
+../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ }; 
+ ^
+../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+Finished building: ../src/rcservo.cpp
+ 
+Building file: ../src/sccb.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/sccb.d" -MT"src/sccb.o" -MT"src/sccb.d" -o "src/sccb.o" "../src/sccb.cpp"
+Finished building: ../src/sccb.cpp
+ 
+Building file: ../src/smlink.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/smlink.d" -MT"src/smlink.o" -MT"src/smlink.d" -o "src/smlink.o" "../src/smlink.cpp"
+Finished building: ../src/smlink.cpp
+ 
+Building file: ../src/system_LPC43xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/system_LPC43xx.d" -MT"src/system_LPC43xx.o" -MT"src/system_LPC43xx.d" -o "src/system_LPC43xx.o" "../src/system_LPC43xx.c"
+Finished building: ../src/system_LPC43xx.c
+ 
+Building file: ../src/usbcore.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/usbcore.d" -MT"src/usbcore.o" -MT"src/usbcore.d" -o "src/usbcore.o" "../src/usbcore.c"
+../src/usbcore.c: In function 'USB_ReqGetStatus':
+../src/usbcore.c:203:9: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+         *((__packed uint16_t *)EP0Buf) = 0;
+         ^
+../src/usbcore.c:213:9: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+         *((__packed uint16_t *)EP0Buf) = (USB_EndPointHalt & m) ? 1 : 0;
+         ^
+../src/usbcore.c: In function 'USB_EndPoint0':
+../src/usbcore.c:1079:1: warning: label 'out_class_ok' defined but not used [-Wunused-label]
+ out_class_ok:                                                            /* request finished successfully */
+ ^
+../src/usbcore.c:926:1: warning: label 'setup_class_ok' defined but not used [-Wunused-label]
+ setup_class_ok:                                                          /* request finished successfully */
+ ^
+Finished building: ../src/usbcore.c
+ 
+Building file: ../src/usbdesc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/usbdesc.d" -MT"src/usbdesc.o" -MT"src/usbdesc.d" -o "src/usbdesc.o" "../src/usbdesc.c"
+In file included from ../src/usbdesc.c:42:0:
+C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:21: warning: suggest parentheses around '+' in operand of '&' [-Wparentheses]
+ #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
+                     ^
+../src/usbdesc.c:75:3: note: in expansion of macro 'WBVAL'
+   WBVAL(                             /* wTotalLength */
+   ^
+C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:33: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+ #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
+                                 ^
+../src/usbdesc.c:75:3: note: in expansion of macro 'WBVAL'
+   WBVAL(                             /* wTotalLength */
+   ^
+C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:21: warning: suggest parentheses around '+' in operand of '&' [-Wparentheses]
+ #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
+                     ^
+../src/usbdesc.c:140:3: note: in expansion of macro 'WBVAL'
+   WBVAL(                             /* wTotalLength */
+   ^
+C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:33: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+ #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
+                                 ^
+../src/usbdesc.c:140:3: note: in expansion of macro 'WBVAL'
+   WBVAL(                             /* wTotalLength */
+   ^
+C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:21: warning: suggest parentheses around '+' in operand of '&' [-Wparentheses]
+ #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
+                     ^
+../src/usbdesc.c:268:3: note: in expansion of macro 'WBVAL'
+   WBVAL(                             /* wTotalLength */
+   ^
+C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:33: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+ #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
+                                 ^
+../src/usbdesc.c:268:3: note: in expansion of macro 'WBVAL'
+   WBVAL(                             /* wTotalLength */
+   ^
+C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:21: warning: suggest parentheses around '+' in operand of '&' [-Wparentheses]
+ #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
+                     ^
+../src/usbdesc.c:332:3: note: in expansion of macro 'WBVAL'
+   WBVAL(                             /* wTotalLength */
+   ^
+C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:33: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+ #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
+                                 ^
+../src/usbdesc.c:332:3: note: in expansion of macro 'WBVAL'
+   WBVAL(                             /* wTotalLength */
+   ^
+Finished building: ../src/usbdesc.c
+ 
+Building file: ../src/usbhw.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/usbhw.d" -MT"src/usbhw.o" -MT"src/usbhw.d" -o "src/usbhw.o" "../src/usbhw.c"
+Finished building: ../src/usbhw.c
+ 
+Building file: ../src/usblink.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/usblink.d" -MT"src/usblink.o" -MT"src/usblink.d" -o "src/usblink.o" "../src/usblink.cpp"
+Finished building: ../src/usblink.cpp
+ 
+Building file: ../src/usbuser.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/usbuser.d" -MT"src/usbuser.o" -MT"src/usbuser.d" -o "src/usbuser.o" "../src/usbuser.c"
+Finished building: ../src/usbuser.c
+ 
+Building target: liblibpixy_m4.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "liblibpixy_m4.a"  ./src/blob.o ./src/blobs.o ./src/calc.o ./src/camera.o ./src/chirp.o ./src/colorlut.o ./src/debug_frmwrk.o ./src/flash.o ./src/fpu_init.o ./src/ipc_mbx.o ./src/led.o ./src/lpc43xx_adc.o ./src/lpc43xx_cgu.o ./src/lpc43xx_i2c.o ./src/lpc43xx_scu.o ./src/lpc43xx_ssp.o ./src/lpc43xx_uart.o ./src/misc.o ./src/param.o ./src/pixy_init.o ./src/platform_config.o ./src/power.o ./src/qqueue.o ./src/rcservo.o ./src/sccb.o ./src/smlink.o ./src/system_LPC43xx.o ./src/usbcore.o ./src/usbdesc.o ./src/usbhw.o ./src/usblink.o ./src/usbuser.o   
+c:\nxp\LPCXpresso_7.6.2_326\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating liblibpixy_m4.a
+Finished building target: liblibpixy_m4.a
+ 
+/usr/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "liblibpixy_m4.a" ; # arm-none-eabi-objdump -h -S "liblibpixy_m4.a" >"liblibpixy_m4.lss"
+   text	   data	    bss	    dec	    hex	filename
+   1113	      0	      7	   1120	    460	blob.o (ex liblibpixy_m4.a)
+   4598	      0	      0	   4598	   11f6	blobs.o (ex liblibpixy_m4.a)
+    364	      0	      0	    364	    16c	calc.o (ex liblibpixy_m4.a)
+   5007	     10	     21	   5038	   13ae	camera.o (ex liblibpixy_m4.a)
+   4510	      0	      0	   4510	   119e	chirp.o (ex liblibpixy_m4.a)
+   2836	      0	      0	   2836	    b14	colorlut.o (ex liblibpixy_m4.a)
+    826	      0	      0	    826	    33a	debug_frmwrk.o (ex liblibpixy_m4.a)
+    192	      0	      0	    192	     c0	flash.o (ex liblibpixy_m4.a)
+     72	      0	      0	     72	     48	fpu_init.o (ex liblibpixy_m4.a)
+    678	      0	      0	    678	    2a6	ipc_mbx.o (ex liblibpixy_m4.a)
+   1627	      0	     33	   1660	    67c	led.o (ex liblibpixy_m4.a)
+    282	      0	      0	    282	    11a	lpc43xx_adc.o (ex liblibpixy_m4.a)
+   2845	     68	      0	   2913	    b61	lpc43xx_cgu.o (ex liblibpixy_m4.a)
+   1964	      0	     52	   2016	    7e0	lpc43xx_i2c.o (ex liblibpixy_m4.a)
+     20	      0	      0	     20	     14	lpc43xx_scu.o (ex liblibpixy_m4.a)
+    704	      0	      0	    704	    2c0	lpc43xx_ssp.o (ex liblibpixy_m4.a)
+   1416	      0	      0	   1416	    588	lpc43xx_uart.o (ex liblibpixy_m4.a)
+    284	      0	      4	    288	    120	misc.o (ex liblibpixy_m4.a)
+   2880	      4	     13	   2897	    b51	param.o (ex liblibpixy_m4.a)
+    931	      0	     13	    944	    3b0	pixy_init.o (ex liblibpixy_m4.a)
+    928	      0	      0	    928	    3a0	platform_config.o (ex liblibpixy_m4.a)
+    553	      0	      0	    553	    229	power.o (ex liblibpixy_m4.a)
+    268	      0	      0	    268	    10c	qqueue.o (ex liblibpixy_m4.a)
+   2276	      0	     12	   2288	    8f0	rcservo.o (ex liblibpixy_m4.a)
+    558	      0	      0	    558	    22e	sccb.o (ex liblibpixy_m4.a)
+    246	      0	      0	    246	     f6	smlink.o (ex liblibpixy_m4.a)
+      2	      0	      0	      2	      2	system_LPC43xx.o (ex liblibpixy_m4.a)
+   1906	      0	      0	   1906	    772	usbcore.o (ex liblibpixy_m4.a)
+    312	      0	      0	    312	    138	usbdesc.o (ex liblibpixy_m4.a)
+   1742	      0	     20	   1762	    6e2	usbhw.o (ex liblibpixy_m4.a)
+    370	      0	     68	    438	    1b6	usblink.o (ex liblibpixy_m4.a)
+    523	      0	     38	    561	    231	usbuser.o (ex liblibpixy_m4.a)
+ 
+12:05:51 **** Clean-only build of configuration Release for project main_m0 ****
+make -r clean 
+make: *** No rule to make target `clean'.  Stop.
+12:05:53 **** Build of configuration Release for project main_m0 ****
+make -r all 
+Building file: ../src/cr_startup_lpc43xx-m0app.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_M0APP -DNDEBUG -D__CODE_RED -DCORE_M0 -D__LPC43XX__ -DCORE_M0APP -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -Wa,-ahlnds=cr_startup_lpc43xx-m0app.asm -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/cr_startup_lpc43xx-m0app.d" -MT"src/cr_startup_lpc43xx-m0app.o" -MT"src/cr_startup_lpc43xx-m0app.d" -o "src/cr_startup_lpc43xx-m0app.o" "../src/cr_startup_lpc43xx-m0app.c"
+Finished building: ../src/cr_startup_lpc43xx-m0app.c
+ 
+Building file: ../src/main_m0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DIPC_SLAVE -DPIXY -D__REDLIB__ -D__MULTICORE_M0APP -DNDEBUG -D__CODE_RED -DCORE_M0 -D__LPC43XX__ -DCORE_M0APP -I"C:\Programming\pixy\src\device\libpixy_m0\inc" -I../../common/inc -I../../../common/inc -O0 -g -Wall -Wa,-ahlnds=main_m0.asm -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -D__REDLIB__ -MMD -MP -MF"src/main_m0.d" -MT"src/main_m0.o" -MT"src/main_m0.d" -o "src/main_m0.o" "../src/main_m0.c"
+Finished building: ../src/main_m0.c
+ 
+Building target: main_m0.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Programming\pixy\src\device\libpixy_m0\Release" -Xlinker -Map="main_m0.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "main_m0_Release.ld" -o "main_m0.axf"  ./src/cr_startup_lpc43xx-m0app.o ./src/main_m0.o   -llibpixy_m0 && arm-none-eabi-objcopy --target elf32-littlearm --verbose --strip-all --redefine-sym __vectors_start__=__vectors_start___core_m0app --keep-symbol __vectors_start___core_m0app --rename-section .text=".core_m0app" --rename-section .data=".core_m0app.data" --rename-section .data_RAM2=".core_m0app.data_RAM2" --rename-section .data_RAM3=".core_m0app.data_RAM3" --rename-section .data_RAM4=".core_m0app.data_RAM4" --rename-section .data_RAM5=".core_m0app.data_RAM5" "main_m0.axf" "main_m0.axf.o"
+copy from `main_m0.axf' [elf32-littlearm] to `main_m0.axf.o' [elf32-littlearm]
+Finished building target: main_m0.axf
+ 
+/usr/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "main_m0.axf"; # arm-none-eabi-objcopy -v -O binary "main_m0.axf" "main_m0.bin" ; # checksum -p LPC4330_M0 -d "main_m0.bin";
+   text	   data	    bss	    dec	    hex	filename
+   8696	     16	     48	   8760	   2238	main_m0.axf
+ 
+12:06:04 **** Incremental Build of configuration Release for project main_m0 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:06:05 **** Clean-only build of configuration SPIFI for project main_m4 ****
+make -r clean 
+make: *** No rule to make target `clean'.  Stop.
+12:06:05 **** Build of configuration SPIFI for project main_m4 ****
+make -r all 
+Building file: ../src/analogdig.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/analogdig.d" -MT"src/analogdig.o" -MT"src/analogdig.d" -o "src/analogdig.o" "../src/analogdig.cpp"
+Finished building: ../src/analogdig.cpp
+ 
+Building file: ../src/button.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/button.d" -MT"src/button.o" -MT"src/button.d" -o "src/button.o" "../src/button.cpp"
+../src/button.cpp: In function 'void scaleLED(uint32_t, uint32_t, uint32_t, uint32_t)':
+../src/button.cpp:42:35: warning: unused variable 't' [-Wunused-variable]
+  uint32_t max, min, current, sat, t; 
+                                   ^
+Finished building: ../src/button.cpp
+ 
+Building file: ../src/conncomp.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/conncomp.d" -MT"src/conncomp.o" -MT"src/conncomp.d" -o "src/conncomp.o" "../src/conncomp.cpp"
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+Finished building: ../src/conncomp.cpp
+ 
+Building file: ../src/cr_cpp_config.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/cr_cpp_config.d" -MT"src/cr_cpp_config.o" -MT"src/cr_cpp_config.d" -o "src/cr_cpp_config.o" "../src/cr_cpp_config.cpp"
+Finished building: ../src/cr_cpp_config.cpp
+ 
+Building file: ../src/cr_start_m0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_MASTER -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/cr_start_m0.d" -MT"src/cr_start_m0.o" -MT"src/cr_start_m0.d" -o "src/cr_start_m0.o" "../src/cr_start_m0.c"
+Finished building: ../src/cr_start_m0.c
+ 
+Building file: ../src/cr_startup_lpc43xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/cr_startup_lpc43xx.d" -MT"src/cr_startup_lpc43xx.o" -MT"src/cr_startup_lpc43xx.d" -o "src/cr_startup_lpc43xx.o" "../src/cr_startup_lpc43xx.cpp"
+Finished building: ../src/cr_startup_lpc43xx.cpp
+ 
+Building file: ../src/exec.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/exec.d" -MT"src/exec.o" -MT"src/exec.d" -o "src/exec.o" "../src/exec.cpp"
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+Finished building: ../src/exec.cpp
+ 
+Building file: ../src/i2c.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -MT"src/i2c.d" -o "src/i2c.o" "../src/i2c.cpp"
+Finished building: ../src/i2c.cpp
+ 
+Building file: ../src/main_m4.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/main_m4.d" -MT"src/main_m4.o" -MT"src/main_m4.d" -o "src/main_m4.o" "../src/main_m4.cpp"
+../src/main_m4.cpp: In function 'int main()':
+../src/main_m4.cpp:57:11: warning: unused variable 'major' [-Wunused-variable]
+  uint16_t major, minor, build;
+           ^
+../src/main_m4.cpp:57:18: warning: unused variable 'minor' [-Wunused-variable]
+  uint16_t major, minor, build;
+                  ^
+../src/main_m4.cpp:57:25: warning: unused variable 'build' [-Wunused-variable]
+  uint16_t major, minor, build;
+                         ^
+../src/main_m4.cpp:58:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, res, count;
+      ^
+../src/main_m4.cpp:58:9: warning: unused variable 'res' [-Wunused-variable]
+  int i, res, count;
+         ^
+../src/main_m4.cpp:58:14: warning: unused variable 'count' [-Wunused-variable]
+  int i, res, count;
+              ^
+Finished building: ../src/main_m4.cpp
+ 
+Building file: ../src/progblobs.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/progblobs.d" -MT"src/progblobs.o" -MT"src/progblobs.d" -o "src/progblobs.o" "../src/progblobs.cpp"
+../src/progblobs.cpp:34:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/progblobs.cpp:34:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+Finished building: ../src/progblobs.cpp
+ 
+Building file: ../src/progchase.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/progchase.d" -MT"src/progchase.o" -MT"src/progchase.d" -o "src/progchase.o" "../src/progchase.cpp"
+../src/progchase.cpp:36:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/progchase.cpp:36:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/progchase.cpp: In member function 'int32_t MotorLoop::update(int32_t)':
+../src/progchase.cpp:55:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_prevError!=0x80000000)
+                 ^
+../src/progchase.cpp:66:9: warning: 'vel' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  return vel;
+         ^
+Finished building: ../src/progchase.cpp
+ 
+Building file: ../src/progpt.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/progpt.d" -MT"src/progpt.o" -MT"src/progpt.d" -o "src/progpt.o" "../src/progpt.cpp"
+../src/progpt.cpp:36:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/progpt.cpp:36:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/progpt.cpp: In member function 'void ServoLoop::update(int32_t)':
+../src/progpt.cpp:55:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_prevError!=0x80000000)
+                 ^
+Finished building: ../src/progpt.cpp
+ 
+Building file: ../src/progvideo.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/progvideo.d" -MT"src/progvideo.o" -MT"src/progvideo.d" -o "src/progvideo.o" "../src/progvideo.cpp"
+../src/progvideo.cpp:33:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/progvideo.cpp:33:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+In file included from C:\Programming\pixy\src\device\main_m4\inc/exec.h:19:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/progvideo.h:19,
+                 from ../src/progvideo.cpp:17:
+../src/progvideo.cpp: In function 'void sendCustom(uint8_t)':
+../src/progvideo.cpp:58:44: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+   fcc =  FOURCC('E','X',(g_execArg%100)/10 + '0', (g_execArg%10) + '0');
+                                            ^
+../../../common/inc/chirp.hpp:10:75: note: in definition of macro 'FOURCC'
+ #define FOURCC(a, b, c, d)  (((uint32_t)a<<0)|((uint32_t)b<<8)|((uint32_t)c<<16)|((uint32_t)d<<24))
+                                                                           ^
+../src/progvideo.cpp:58:66: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+   fcc =  FOURCC('E','X',(g_execArg%100)/10 + '0', (g_execArg%10) + '0');
+                                                                  ^
+../../../common/inc/chirp.hpp:10:93: note: in definition of macro 'FOURCC'
+ #define FOURCC(a, b, c, d)  (((uint32_t)a<<0)|((uint32_t)b<<8)|((uint32_t)c<<16)|((uint32_t)d<<24))
+                                                                                             ^
+Finished building: ../src/progvideo.cpp
+ 
+Building file: ../src/serial.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/serial.d" -MT"src/serial.o" -MT"src/serial.d" -o "src/serial.o" "../src/serial.cpp"
+Finished building: ../src/serial.cpp
+ 
+Building file: ../src/spi.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/spi.d" -MT"src/spi.o" -MT"src/spi.d" -o "src/spi.o" "../src/spi.cpp"
+../src/spi.cpp: In constructor 'Spi::Spi(SerialCallback)':
+../src/spi.cpp:236:20: warning: variable 'd' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t d;
+                    ^
+Finished building: ../src/spi.cpp
+ 
+Building file: ../src/uart.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/uart.d" -MT"src/uart.o" -MT"src/uart.d" -o "src/uart.o" "../src/uart.cpp"
+../src/uart.cpp: In member function 'void Uart::irqHandler()':
+../src/uart.cpp:34:20: warning: variable 'v' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t v;
+                    ^
+Finished building: ../src/uart.cpp
+ 
+Building target: main_m4.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Programming\pixy\src\device\main_m4\src" -L"C:\Programming\pixy\src\device\libpixy_m4\Release" -Xlinker -Map="main_m4.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "SPIFI_link_template.ld" -L ../linkscripts -o "main_m4.axf"  ./src/analogdig.o ./src/button.o ./src/conncomp.o ./src/cr_cpp_config.o ./src/cr_start_m0.o ./src/cr_startup_lpc43xx.o ./src/exec.o ./src/i2c.o ./src/main_m4.o ./src/progblobs.o ./src/progchase.o ./src/progpt.o ./src/progvideo.o ./src/serial.o ./src/spi.o ./src/uart.o  C:/Programming/pixy/src/device/main_m0/Release/main_m0.axf.o -llibpixy_m4 -lfalcon_m4_spifi_drv
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(spifi_rom_api.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(falcon_details.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(amic.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(atmel.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(chi.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(eon.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(esmt.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(giga.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(macronix.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(numonyx.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(spansion.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(sst.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(winbond.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+Finished building target: main_m4.axf
+ 
+/usr/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "main_m4.axf" ; arm-none-eabi-objcopy -v -O binary "main_m4.axf" "main_m4.bin" ; checksum -p LPC4330 -d "main_m4.bin" ; arm-none-eabi-objcopy -v -O ihex "main_m4.axf" pixy_firmware.hex
+   text	   data	    bss	    dec	    hex	filename
+ 104332	   2316	   4936	 111584	  1b3e0	main_m4.axf
+copy from `main_m4.axf' [elf32-littlearm] to `main_m4.bin' [binary]
+Created checksum 0x67ff764a at offset 0x1c in file main_m4.bincopy from `main_m4.axf' [elf32-littlearm] to `pixy_firmware.hex' [ihex]
+ 
+12:11:03 **** Incremental Build of configuration Release for project main_m0 ****
+make -r all 
+make: Nothing to be done for `all'.
+12:11:03 **** Incremental Build of configuration SPIFI for project main_m4 ****
+make -r all 
+Building file: ../src/analogdig.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/analogdig.d" -MT"src/analogdig.o" -MT"src/analogdig.d" -o "src/analogdig.o" "../src/analogdig.cpp"
+Finished building: ../src/analogdig.cpp
+ 
+Building file: ../src/button.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/button.d" -MT"src/button.o" -MT"src/button.d" -o "src/button.o" "../src/button.cpp"
+../src/button.cpp: In function 'void scaleLED(uint32_t, uint32_t, uint32_t, uint32_t)':
+../src/button.cpp:42:35: warning: unused variable 't' [-Wunused-variable]
+  uint32_t max, min, current, sat, t; 
+                                   ^
+Finished building: ../src/button.cpp
+ 
+Building file: ../src/conncomp.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/conncomp.d" -MT"src/conncomp.o" -MT"src/conncomp.d" -o "src/conncomp.o" "../src/conncomp.cpp"
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/conncomp.cpp:96:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+Finished building: ../src/conncomp.cpp
+ 
+Building file: ../src/cr_cpp_config.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/cr_cpp_config.d" -MT"src/cr_cpp_config.o" -MT"src/cr_cpp_config.d" -o "src/cr_cpp_config.o" "../src/cr_cpp_config.cpp"
+Finished building: ../src/cr_cpp_config.cpp
+ 
+Building file: ../src/cr_start_m0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_MASTER -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/cr_start_m0.d" -MT"src/cr_start_m0.o" -MT"src/cr_start_m0.d" -o "src/cr_start_m0.o" "../src/cr_start_m0.c"
+Finished building: ../src/cr_start_m0.c
+ 
+Building file: ../src/cr_startup_lpc43xx.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/cr_startup_lpc43xx.d" -MT"src/cr_startup_lpc43xx.o" -MT"src/cr_startup_lpc43xx.d" -o "src/cr_startup_lpc43xx.o" "../src/cr_startup_lpc43xx.cpp"
+Finished building: ../src/cr_startup_lpc43xx.cpp
+ 
+Building file: ../src/exec.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/exec.d" -MT"src/exec.o" -MT"src/exec.d" -o "src/exec.o" "../src/exec.cpp"
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+Finished building: ../src/exec.cpp
+ 
+Building file: ../src/i2c.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -MT"src/i2c.d" -o "src/i2c.o" "../src/i2c.cpp"
+Finished building: ../src/i2c.cpp
+ 
+Building file: ../src/main_m4.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/main_m4.d" -MT"src/main_m4.o" -MT"src/main_m4.d" -o "src/main_m4.o" "../src/main_m4.cpp"
+../src/main_m4.cpp: In function 'int main()':
+../src/main_m4.cpp:57:11: warning: unused variable 'major' [-Wunused-variable]
+  uint16_t major, minor, build;
+           ^
+../src/main_m4.cpp:57:18: warning: unused variable 'minor' [-Wunused-variable]
+  uint16_t major, minor, build;
+                  ^
+../src/main_m4.cpp:57:25: warning: unused variable 'build' [-Wunused-variable]
+  uint16_t major, minor, build;
+                         ^
+../src/main_m4.cpp:58:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, res, count;
+      ^
+../src/main_m4.cpp:58:9: warning: unused variable 'res' [-Wunused-variable]
+  int i, res, count;
+         ^
+../src/main_m4.cpp:58:14: warning: unused variable 'count' [-Wunused-variable]
+  int i, res, count;
+              ^
+Finished building: ../src/main_m4.cpp
+ 
+Building file: ../src/progblobs.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/progblobs.d" -MT"src/progblobs.o" -MT"src/progblobs.d" -o "src/progblobs.o" "../src/progblobs.cpp"
+../src/progblobs.cpp:34:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/progblobs.cpp:34:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+Finished building: ../src/progblobs.cpp
+ 
+Building file: ../src/progchase.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/progchase.d" -MT"src/progchase.o" -MT"src/progchase.d" -o "src/progchase.o" "../src/progchase.cpp"
+../src/progchase.cpp:36:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/progchase.cpp:36:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/progchase.cpp: In member function 'int32_t MotorLoop::update(int32_t)':
+../src/progchase.cpp:55:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_prevError!=0x80000000)
+                 ^
+../src/progchase.cpp:66:9: warning: 'vel' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  return vel;
+         ^
+Finished building: ../src/progchase.cpp
+ 
+Building file: ../src/progpt.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/progpt.d" -MT"src/progpt.o" -MT"src/progpt.d" -o "src/progpt.o" "../src/progpt.cpp"
+../src/progpt.cpp:36:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/progpt.cpp:36:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/progpt.cpp: In member function 'void ServoLoop::update(int32_t)':
+../src/progpt.cpp:55:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (m_prevError!=0x80000000)
+                 ^
+Finished building: ../src/progpt.cpp
+ 
+Building file: ../src/progvideo.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/progvideo.d" -MT"src/progvideo.o" -MT"src/progvideo.d" -o "src/progvideo.o" "../src/progvideo.cpp"
+../src/progvideo.cpp:33:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/progvideo.cpp:33:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+In file included from C:\Programming\pixy\src\device\main_m4\inc/exec.h:19:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/progvideo.h:19,
+                 from ../src/progvideo.cpp:17:
+../src/progvideo.cpp: In function 'void sendCustom(uint8_t)':
+../src/progvideo.cpp:58:44: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+   fcc =  FOURCC('E','X',(g_execArg%100)/10 + '0', (g_execArg%10) + '0');
+                                            ^
+../../../common/inc/chirp.hpp:10:75: note: in definition of macro 'FOURCC'
+ #define FOURCC(a, b, c, d)  (((uint32_t)a<<0)|((uint32_t)b<<8)|((uint32_t)c<<16)|((uint32_t)d<<24))
+                                                                           ^
+../src/progvideo.cpp:58:66: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+   fcc =  FOURCC('E','X',(g_execArg%100)/10 + '0', (g_execArg%10) + '0');
+                                                                  ^
+../../../common/inc/chirp.hpp:10:93: note: in definition of macro 'FOURCC'
+ #define FOURCC(a, b, c, d)  (((uint32_t)a<<0)|((uint32_t)b<<8)|((uint32_t)c<<16)|((uint32_t)d<<24))
+                                                                                             ^
+Finished building: ../src/progvideo.cpp
+ 
+Building file: ../src/serial.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/serial.d" -MT"src/serial.o" -MT"src/serial.d" -o "src/serial.o" "../src/serial.cpp"
+Finished building: ../src/serial.cpp
+ 
+Building file: ../src/spi.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/spi.d" -MT"src/spi.o" -MT"src/spi.d" -o "src/spi.o" "../src/spi.cpp"
+../src/spi.cpp: In constructor 'Spi::Spi(SerialCallback)':
+../src/spi.cpp:236:20: warning: variable 'd' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t d;
+                    ^
+Finished building: ../src/spi.cpp
+ 
+Building file: ../src/uart.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/uart.d" -MT"src/uart.o" -MT"src/uart.d" -o "src/uart.o" "../src/uart.cpp"
+../src/uart.cpp: In member function 'void Uart::irqHandler()':
+../src/uart.cpp:34:20: warning: variable 'v' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t v;
+                    ^
+Finished building: ../src/uart.cpp
+ 
+Building target: main_m4.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Programming\pixy\src\device\main_m4\src" -L"C:\Programming\pixy\src\device\libpixy_m4\Release" -Xlinker -Map="main_m4.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "SPIFI_link_template.ld" -L ../linkscripts -o "main_m4.axf"  ./src/analogdig.o ./src/button.o ./src/conncomp.o ./src/cr_cpp_config.o ./src/cr_start_m0.o ./src/cr_startup_lpc43xx.o ./src/exec.o ./src/i2c.o ./src/main_m4.o ./src/progblobs.o ./src/progchase.o ./src/progpt.o ./src/progvideo.o ./src/serial.o ./src/spi.o ./src/uart.o  C:/Programming/pixy/src/device/main_m0/Release/main_m0.axf.o -llibpixy_m4 -lfalcon_m4_spifi_drv
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(spifi_rom_api.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(falcon_details.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(amic.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(atmel.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(chi.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(eon.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(esmt.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(giga.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(macronix.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(numonyx.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(spansion.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(sst.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(winbond.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
+Finished building target: main_m4.axf
+ 
+/usr/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "main_m4.axf" ; arm-none-eabi-objcopy -v -O binary "main_m4.axf" "main_m4.bin" ; checksum -p LPC4330 -d "main_m4.bin" ; arm-none-eabi-objcopy -v -O ihex "main_m4.axf" pixy_firmware.hex
+   text	   data	    bss	    dec	    hex	filename
+ 104332	   2316	   4936	 111584	  1b3e0	main_m4.axf
+copy from `main_m4.axf' [elf32-littlearm] to `main_m4.bin' [binary]
+Created checksum 0x67ff764a at offset 0x1c in file main_m4.bincopy from `main_m4.axf' [elf32-littlearm] to `pixy_firmware.hex' [ihex]
+ 
