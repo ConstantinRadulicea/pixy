@@ -1,4 +1,4 @@
-12:05:29 **** Build of configuration Release for project libpixy_m4 ****
+19:28:06 **** Build of configuration Release for project libpixy_m4 ****
 make -r all 
 Building file: ../src/blob.cpp
 Invoking: MCU C++ Compiler
@@ -30,53 +30,6 @@ Invoking: MCU C++ Compiler
 arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/calc.d" -MT"src/calc.o" -MT"src/calc.d" -o "src/calc.o" "../src/calc.cpp"
 Finished building: ../src/calc.cpp
  
-Building file: ../src/camera.cpp
-Invoking: MCU C++ Compiler
-arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/camera.d" -MT"src/camera.o" -MT"src/camera.d" -o "src/camera.o" "../src/camera.cpp"
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
- };
- ^
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp:169:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/camera.cpp: In function 'void cam_setRegs(const uint8_t*, int)':
-../src/camera.cpp:571:17: warning: unused variable 'q' [-Wunused-variable]
-    volatile int q = 0;
-                 ^
-Finished building: ../src/camera.cpp
- 
 Building file: ../src/chirp.cpp
 Invoking: MCU C++ Compiler
 arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/chirp.d" -MT"src/chirp.o" -MT"src/chirp.d" -o "src/chirp.o" "../src/chirp.cpp"
@@ -106,43 +59,10 @@ Invoking: MCU C Compiler
 arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/debug_frmwrk.d" -MT"src/debug_frmwrk.o" -MT"src/debug_frmwrk.d" -o "src/debug_frmwrk.o" "../src/debug_frmwrk.c"
 Finished building: ../src/debug_frmwrk.c
  
-Building file: ../src/flash.cpp
-Invoking: MCU C++ Compiler
-arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/flash.d" -MT"src/flash.o" -MT"src/flash.d" -o "src/flash.o" "../src/flash.cpp"
-In file included from ../src/flash.cpp:17:0:
-../src/flash.cpp: In function 'int32_t flash_erase(uint32_t, uint32_t)':
-../src/flash.cpp:33:36: warning: suggest parentheses around '+' in operand of '&' [-Wparentheses]
-   addrTemp = FLASH_SECTOR_MASK(addr+i);
-                                    ^
-C:\Programming\pixy\src\device\libpixy_m4\inc/flash.h:23:33: note: in definition of macro 'FLASH_SECTOR_MASK'
- #define FLASH_SECTOR_MASK(a)   (a & (~(FLASH_SECTOR_SIZE-1)))
-                                 ^
-Finished building: ../src/flash.cpp
- 
-Building file: ../src/fpu_init.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/fpu_init.d" -MT"src/fpu_init.o" -MT"src/fpu_init.d" -o "src/fpu_init.o" "../src/fpu_init.c"
-Finished building: ../src/fpu_init.c
- 
 Building file: ../src/ipc_mbx.c
 Invoking: MCU C Compiler
 arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/ipc_mbx.d" -MT"src/ipc_mbx.o" -MT"src/ipc_mbx.d" -o "src/ipc_mbx.o" "../src/ipc_mbx.c"
 Finished building: ../src/ipc_mbx.c
- 
-Building file: ../src/led.cpp
-Invoking: MCU C++ Compiler
-arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/led.d" -MT"src/led.o" -MT"src/led.d" -o "src/led.o" "../src/led.cpp"
-../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
- }; 
- ^
-../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/led.cpp:64:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-Finished building: ../src/led.cpp
  
 Building file: ../src/lpc43xx_adc.c
 Invoking: MCU C Compiler
@@ -191,201 +111,19 @@ Invoking: MCU C Compiler
 arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/lpc43xx_uart.d" -MT"src/lpc43xx_uart.o" -MT"src/lpc43xx_uart.d" -o "src/lpc43xx_uart.o" "../src/lpc43xx_uart.c"
 Finished building: ../src/lpc43xx_uart.c
  
-Building file: ../src/misc.cpp
-Invoking: MCU C++ Compiler
-arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/misc.d" -MT"src/misc.o" -MT"src/misc.d" -o "src/misc.o" "../src/misc.cpp"
-Finished building: ../src/misc.cpp
- 
-Building file: ../src/param.cpp
-Invoking: MCU C++ Compiler
-arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/param.d" -MT"src/param.o" -MT"src/param.d" -o "src/param.o" "../src/param.cpp"
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
- };
- ^
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp:99:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/param.cpp: In function 'uint32_t prm_nextFree()':
-../src/param.cpp:311:10: warning: converting to non-pointer type 'uint32_t {aka long unsigned int}' from NULL [-Wconversion-null]
-   return NULL;
-          ^
-../src/param.cpp: In function 'int prm_add(const char*, uint32_t, const char*, ...)':
-../src/param.cpp:490:32: warning: NULL used in arithmetic [-Wpointer-arith]
-  if ((freeLoc=prm_nextFree())==NULL)
-                                ^
-In file included from ../src/param.cpp:23:0:
-../../../common/inc/simplevector.h: In function 'int prm_setShadowCallback(const char*, ShadowCallback)':
-../../../common/inc/simplevector.h:36:9: warning: assuming signed overflow does not occur when assuming that (X + c) < X is always false [-Wstrict-overflow]
-         if(newCapacity < m_size)
-         ^
-Finished building: ../src/param.cpp
- 
-Building file: ../src/pixy_init.cpp
-Invoking: MCU C++ Compiler
-arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/pixy_init.d" -MT"src/pixy_init.o" -MT"src/pixy_init.d" -o "src/pixy_init.o" "../src/pixy_init.cpp"
-Finished building: ../src/pixy_init.cpp
- 
-Building file: ../src/platform_config.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/platform_config.d" -MT"src/platform_config.o" -MT"src/platform_config.d" -o "src/platform_config.o" "../src/platform_config.c"
-Finished building: ../src/platform_config.c
- 
-Building file: ../src/power.cpp
-Invoking: MCU C++ Compiler
-arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/power.d" -MT"src/power.o" -MT"src/power.d" -o "src/power.o" "../src/power.cpp"
-../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
- }; 
- ^
-../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/power.cpp:52:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-Finished building: ../src/power.cpp
- 
 Building file: ../src/qqueue.cpp
 Invoking: MCU C++ Compiler
 arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/qqueue.d" -MT"src/qqueue.o" -MT"src/qqueue.d" -o "src/qqueue.o" "../src/qqueue.cpp"
 Finished building: ../src/qqueue.cpp
- 
-Building file: ../src/rcservo.cpp
-Invoking: MCU C++ Compiler
-arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/rcservo.d" -MT"src/rcservo.o" -MT"src/rcservo.d" -o "src/rcservo.o" "../src/rcservo.cpp"
-../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
- }; 
- ^
-../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-../src/rcservo.cpp:72:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-Finished building: ../src/rcservo.cpp
- 
-Building file: ../src/sccb.cpp
-Invoking: MCU C++ Compiler
-arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/sccb.d" -MT"src/sccb.o" -MT"src/sccb.d" -o "src/sccb.o" "../src/sccb.cpp"
-Finished building: ../src/sccb.cpp
- 
-Building file: ../src/smlink.cpp
-Invoking: MCU C++ Compiler
-arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/smlink.d" -MT"src/smlink.o" -MT"src/smlink.d" -o "src/smlink.o" "../src/smlink.cpp"
-Finished building: ../src/smlink.cpp
  
 Building file: ../src/system_LPC43xx.c
 Invoking: MCU C Compiler
 arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/system_LPC43xx.d" -MT"src/system_LPC43xx.o" -MT"src/system_LPC43xx.d" -o "src/system_LPC43xx.o" "../src/system_LPC43xx.c"
 Finished building: ../src/system_LPC43xx.c
  
-Building file: ../src/usbcore.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/usbcore.d" -MT"src/usbcore.o" -MT"src/usbcore.d" -o "src/usbcore.o" "../src/usbcore.c"
-../src/usbcore.c: In function 'USB_ReqGetStatus':
-../src/usbcore.c:203:9: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
-         *((__packed uint16_t *)EP0Buf) = 0;
-         ^
-../src/usbcore.c:213:9: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
-         *((__packed uint16_t *)EP0Buf) = (USB_EndPointHalt & m) ? 1 : 0;
-         ^
-../src/usbcore.c: In function 'USB_EndPoint0':
-../src/usbcore.c:1079:1: warning: label 'out_class_ok' defined but not used [-Wunused-label]
- out_class_ok:                                                            /* request finished successfully */
- ^
-../src/usbcore.c:926:1: warning: label 'setup_class_ok' defined but not used [-Wunused-label]
- setup_class_ok:                                                          /* request finished successfully */
- ^
-Finished building: ../src/usbcore.c
- 
-Building file: ../src/usbdesc.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/usbdesc.d" -MT"src/usbdesc.o" -MT"src/usbdesc.d" -o "src/usbdesc.o" "../src/usbdesc.c"
-In file included from ../src/usbdesc.c:42:0:
-C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:21: warning: suggest parentheses around '+' in operand of '&' [-Wparentheses]
- #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
-                     ^
-../src/usbdesc.c:75:3: note: in expansion of macro 'WBVAL'
-   WBVAL(                             /* wTotalLength */
-   ^
-C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:33: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
- #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
-                                 ^
-../src/usbdesc.c:75:3: note: in expansion of macro 'WBVAL'
-   WBVAL(                             /* wTotalLength */
-   ^
-C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:21: warning: suggest parentheses around '+' in operand of '&' [-Wparentheses]
- #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
-                     ^
-../src/usbdesc.c:140:3: note: in expansion of macro 'WBVAL'
-   WBVAL(                             /* wTotalLength */
-   ^
-C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:33: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
- #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
-                                 ^
-../src/usbdesc.c:140:3: note: in expansion of macro 'WBVAL'
-   WBVAL(                             /* wTotalLength */
-   ^
-C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:21: warning: suggest parentheses around '+' in operand of '&' [-Wparentheses]
- #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
-                     ^
-../src/usbdesc.c:268:3: note: in expansion of macro 'WBVAL'
-   WBVAL(                             /* wTotalLength */
-   ^
-C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:33: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
- #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
-                                 ^
-../src/usbdesc.c:268:3: note: in expansion of macro 'WBVAL'
-   WBVAL(                             /* wTotalLength */
-   ^
-C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:21: warning: suggest parentheses around '+' in operand of '&' [-Wparentheses]
- #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
-                     ^
-../src/usbdesc.c:332:3: note: in expansion of macro 'WBVAL'
-   WBVAL(                             /* wTotalLength */
-   ^
-C:\Programming\pixy\src\device\libpixy_m4\inc/usbdesc.h:38:33: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
- #define WBVAL(x) (x & 0xFF),((x >> 8) & 0xFF)
-                                 ^
-../src/usbdesc.c:332:3: note: in expansion of macro 'WBVAL'
-   WBVAL(                             /* wTotalLength */
-   ^
-Finished building: ../src/usbdesc.c
- 
-Building file: ../src/usbhw.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/usbhw.d" -MT"src/usbhw.o" -MT"src/usbhw.d" -o "src/usbhw.o" "../src/usbhw.c"
-Finished building: ../src/usbhw.c
- 
-Building file: ../src/usblink.cpp
-Invoking: MCU C++ Compiler
-arm-none-eabi-c++ -D__MULTICORE_NONE -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/usblink.d" -MT"src/usblink.o" -MT"src/usblink.d" -o "src/usblink.o" "../src/usblink.cpp"
-Finished building: ../src/usblink.cpp
- 
-Building file: ../src/usbuser.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__NEWLIB__ -DIPC_MASTER -DPIXY -D__MULTICORE_NONE -DNDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -I"C:\Programming\pixy\src\device\libpixy_m4\inc" -I../../common/inc -I../../../common/inc -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/usbuser.d" -MT"src/usbuser.o" -MT"src/usbuser.d" -o "src/usbuser.o" "../src/usbuser.c"
-Finished building: ../src/usbuser.c
- 
 Building target: liblibpixy_m4.a
 Invoking: MCU Archiver
 arm-none-eabi-ar -r  "liblibpixy_m4.a"  ./src/blob.o ./src/blobs.o ./src/calc.o ./src/camera.o ./src/chirp.o ./src/colorlut.o ./src/debug_frmwrk.o ./src/flash.o ./src/fpu_init.o ./src/ipc_mbx.o ./src/led.o ./src/lpc43xx_adc.o ./src/lpc43xx_cgu.o ./src/lpc43xx_i2c.o ./src/lpc43xx_scu.o ./src/lpc43xx_ssp.o ./src/lpc43xx_uart.o ./src/misc.o ./src/param.o ./src/pixy_init.o ./src/platform_config.o ./src/power.o ./src/qqueue.o ./src/rcservo.o ./src/sccb.o ./src/smlink.o ./src/system_LPC43xx.o ./src/usbcore.o ./src/usbdesc.o ./src/usbhw.o ./src/usblink.o ./src/usbuser.o   
-c:\nxp\LPCXpresso_7.6.2_326\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating liblibpixy_m4.a
 Finished building target: liblibpixy_m4.a
  
 /usr/bin/make --no-print-directory post-build
@@ -426,5 +164,5 @@ arm-none-eabi-size "liblibpixy_m4.a" ; # arm-none-eabi-objdump -h -S "liblibpixy
     523	      0	     38	    561	    231	usbuser.o (ex liblibpixy_m4.a)
  
 
-12:05:36 Build Finished (took 7s.205ms)
+19:28:12 Build Finished (took 5s.541ms)
 
