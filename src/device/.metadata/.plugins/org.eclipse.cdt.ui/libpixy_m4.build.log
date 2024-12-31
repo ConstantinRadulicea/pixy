@@ -1,4 +1,4 @@
-19:28:06 **** Build of configuration Release for project libpixy_m4 ****
+20:36:47 **** Build of configuration Release for project libpixy_m4 ****
 make -r all 
 Building file: ../src/blob.cpp
 Invoking: MCU C++ Compiler
@@ -164,5 +164,5 @@ arm-none-eabi-size "liblibpixy_m4.a" ; # arm-none-eabi-objdump -h -S "liblibpixy
     523	      0	     38	    561	    231	usbuser.o (ex liblibpixy_m4.a)
  
 
-19:28:12 Build Finished (took 5s.541ms)
+20:36:51 Build Finished (took 3s.624ms)
 

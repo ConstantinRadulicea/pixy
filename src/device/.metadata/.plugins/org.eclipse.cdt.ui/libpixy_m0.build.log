@@ -1,4 +1,4 @@
-19:28:03 **** Build of configuration Release for project libpixy_m0 ****
+20:36:45 **** Build of configuration Release for project libpixy_m0 ****
 make -r all 
 Building file: ../src/debug_frmwrk.c
 Invoking: MCU C Compiler
@@ -92,5 +92,5 @@ arm-none-eabi-size "liblibpixy_m0.a" ; # arm-none-eabi-objdump -h -S "liblibpixy
       8	      0	      0	      8	      8	system_LPC43xx.o (ex liblibpixy_m0.a)
  
 
-19:28:06 Build Finished (took 3s.209ms)
+20:36:47 Build Finished (took 2s.285ms)
 
