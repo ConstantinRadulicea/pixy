@@ -1,17 +1,6 @@
-15:41:59 **** Incremental Build of configuration Release for project main_m0 ****
+10:28:10 **** Incremental Build of configuration Release for project main_m0 ****
 make -r all 
-Building target: main_m0.axf
-Invoking: MCU Linker
-arm-none-eabi-gcc -nostdlib -L"C:\Programming\pixy\src\device\libpixy_m0\Release" -Xlinker -Map="main_m0.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "main_m0_Release.ld" -o "main_m0.axf"  ./src/cr_startup_lpc43xx-m0app.o ./src/main_m0.o   -llibpixy_m0 && arm-none-eabi-objcopy --target elf32-littlearm --verbose --strip-all --redefine-sym __vectors_start__=__vectors_start___core_m0app --keep-symbol __vectors_start___core_m0app --rename-section .text=".core_m0app" --rename-section .data=".core_m0app.data" --rename-section .data_RAM2=".core_m0app.data_RAM2" --rename-section .data_RAM3=".core_m0app.data_RAM3" --rename-section .data_RAM4=".core_m0app.data_RAM4" --rename-section .data_RAM5=".core_m0app.data_RAM5" "main_m0.axf" "main_m0.axf.o"
-copy from `main_m0.axf' [elf32-littlearm] to `main_m0.axf.o' [elf32-littlearm]
-Finished building target: main_m0.axf
- 
-/usr/bin/make --no-print-directory post-build
-Performing post-build steps
-arm-none-eabi-size "main_m0.axf"; # arm-none-eabi-objcopy -v -O binary "main_m0.axf" "main_m0.bin" ; # checksum -p LPC4330_M0 -d "main_m0.bin";
-   text	   data	    bss	    dec	    hex	filename
-   8696	     16	     48	   8760	   2238	main_m0.axf
- 
+make: Nothing to be done for `all'.
 
-15:42:02 Build Finished (took 2s.311ms)
+10:28:11 Build Finished (took 141ms)
 

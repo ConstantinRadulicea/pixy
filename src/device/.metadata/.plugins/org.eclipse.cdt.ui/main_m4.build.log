@@ -1,9 +1,369 @@
-15:42:04 **** Incremental Build of configuration SPIFI for project main_m4 ****
+10:28:11 **** Incremental Build of configuration SPIFI for project main_m4 ****
 make -r all 
+Building file: ../src/BitMatrixSkeleton.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/BitMatrixSkeleton.d" -MT"src/BitMatrixSkeleton.o" -MT"src/BitMatrixSkeleton.d" -o "src/BitMatrixSkeleton.o" "../src/BitMatrixSkeleton.cpp"
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:11:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/BitMatrixSkeleton.h:17,
+                 from ../src/BitMatrixSkeleton.cpp:17:
+C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:28:0: warning: "M_PI" redefined
+ #define M_PI       3.14159265358979323846f   // pi
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:20:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:11,
+                 from C:\Programming\pixy\src\device\main_m4\inc/BitMatrixSkeleton.h:17,
+                 from ../src/BitMatrixSkeleton.cpp:17:
+c:\nxp\lpcxpresso_7.6.2_326\lpcxpresso\tools\arm-none-eabi\include\math.h:559:0: note: this is the location of the previous definition
+ #define M_PI  3.14159265358979323846
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:11:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/BitMatrixSkeleton.h:17,
+                 from ../src/BitMatrixSkeleton.cpp:17:
+C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:29:0: warning: "M_PI_2" redefined
+ #define M_PI_2     1.57079632679489661923f   // pi/2
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:20:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:11,
+                 from C:\Programming\pixy\src\device\main_m4\inc/BitMatrixSkeleton.h:17,
+                 from ../src/BitMatrixSkeleton.cpp:17:
+c:\nxp\lpcxpresso_7.6.2_326\lpcxpresso\tools\arm-none-eabi\include\math.h:560:0: note: this is the location of the previous definition
+ #define M_PI_2  1.57079632679489661923
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:12:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/BitMatrixSkeleton.h:17,
+                 from ../src/BitMatrixSkeleton.cpp:17:
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:11:84: warning: '__fastcall__' attribute directive ignored [-Wattributes]
+ static void  __fastcall SetFlag(register void* _Data, register size_t _FlagPosition){
+                                                                                    ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:15:85: warning: '__fastcall__' attribute directive ignored [-Wattributes]
+ static void __fastcall UnsetFlag(register void* _Data, register size_t _FlagPosition){
+                                                                                     ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:19:92: warning: '__fastcall__' attribute directive ignored [-Wattributes]
+ static unsigned char __fastcall GetFlag(register void* _Data, register size_t _FlagPosition){
+                                                                                            ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:23:86: warning: '__fastcall__' attribute directive ignored [-Wattributes]
+ static void __fastcall ChangeFlag(register void* _Data, register size_t _FlagPosition){
+                                                                                      ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrixSkeleton.h:17:0,
+                 from ../src/BitMatrixSkeleton.cpp:17:
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:975:39: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  size_t getFirstSetPixel_last_index = 0;
+                                       ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'unsigned int BitMatrix::getBlockValue(size_t)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:229:120: warning: suggest parentheses around '-' inside '>>' [-Wparentheses]
+    return this->data.at(index) & (((BITARRAY_DATATYPE)BITARRAY_DATATYPE_MAX_VALUE) >> ((size_t)BITARRAY_DATATYPE_BITS) - (this->bitSize() % (size_t)BITARRAY_DATATYPE_BITS));
+                                                                                                                        ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'void BitMatrix::setBlockValue(size_t, unsigned int)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:241:99: warning: suggest parentheses around '-' inside '>>' [-Wparentheses]
+    value &= (((BITARRAY_DATATYPE)BITARRAY_DATATYPE_MAX_VALUE) >> ((size_t)BITARRAY_DATATYPE_BITS) - (this->bitSize() % (size_t)BITARRAY_DATATYPE_BITS));
+                                                                                                   ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'bool BitMatrix::floodFillOnesDelete(size_t, size_t, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:536:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   Point2D_int16_t p = Point2D_int16_t{ (int16_t)row, (int16_t)col };
+                                      ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In static member function 'static std::vector<Point2D_int>* BitMatrix::findLongestPath(BitMatrix*, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:702:22: warning: unused variable 'temp_local_path' [-Wunused-variable]
+   struct _local_path temp_local_path, *temp_ptr_local_path;
+                      ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In static member function 'static Point2D_Distance BitMatrix::bfs(Point2D_int*, BitMatrix*, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:787:31: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   q.push_back(Point2D_Distance{ *start, 0.0f });
+                               ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:812:34: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+      q.push_back(Point2D_Distance{ Point2D_int{(int)newX, (int)newY}, dist + (float)1.0 });
+                                  ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:812:47: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+      q.push_back(Point2D_Distance{ Point2D_int{(int)newX, (int)newY}, dist + (float)1.0 });
+                                               ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:817:10: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return { farthest, (float)maxDist };
+          ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'BitMatrixPosition BitMatrix::getFirstSetPixel()':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:823:28: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+    return BitMatrixPosition{ 0, 0, false };
+                            ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:853:27: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return BitMatrixPosition{ 0, 0, false };
+                           ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'BitMatrixPosition BitMatrix::getNextSetPixel(size_t, size_t)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:861:71: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   BitMatrixIndex start_index = this->PositionToIndex(BitMatrixPosition{row, col, true});
+                                                                       ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:865:28: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+    return BitMatrixPosition{ 0, 0, false };
+                            ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:889:27: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return BitMatrixPosition{ 0, 0, false };
+                           ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In static member function 'static void BitMatrix::downscale(BitMatrix*, BitMatrix*, size_t, float)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:898:21: warning: unused variable 'up_word' [-Wunused-variable]
+   BITARRAY_DATATYPE up_word, mid_word, down_word;
+                     ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:898:30: warning: unused variable 'mid_word' [-Wunused-variable]
+   BITARRAY_DATATYPE up_word, mid_word, down_word;
+                              ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:898:40: warning: unused variable 'down_word' [-Wunused-variable]
+   BITARRAY_DATATYPE up_word, mid_word, down_word;
+                                        ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:899:21: warning: unused variable 'right_up_word' [-Wunused-variable]
+   BITARRAY_DATATYPE right_up_word, right_mid_word, right_down_word;
+                     ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:899:36: warning: unused variable 'right_mid_word' [-Wunused-variable]
+   BITARRAY_DATATYPE right_up_word, right_mid_word, right_down_word;
+                                    ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:899:52: warning: unused variable 'right_down_word' [-Wunused-variable]
+   BITARRAY_DATATYPE right_up_word, right_mid_word, right_down_word;
+                                                    ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'BitMatrixPosition BitMatrix::indexToPosition(size_t, size_t)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:949:27: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return BitMatrixPosition{ row , col, valid };
+                           ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'BitMatrixIndex BitMatrix::PositionToIndex(BitMatrixPosition)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:956:25: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+    return BitMatrixIndex{ 0, 0, false };
+                         ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In static member function 'static bool BitMatrix::isValid(int, int, BitMatrix*, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:1027:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (col < 0 || col >= main->getColumns() || row < 0 || row >= main->getRows()) {
+                      ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:1027:62: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (col < 0 || col >= main->getColumns() || row < 0 || row >= main->getRows()) {
+                                                              ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In function 'void baiernToBitmatrixDownscale_minPooling(BitMatrix*, uint8_t*, uint16_t, uint16_t, size_t, float, float)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:1036:11: warning: unused variable 'rgb_pixel' [-Wunused-variable]
+  RGBcolor rgb_pixel;
+           ^
+../src/BitMatrixSkeleton.cpp: In function 'int iteration1_edge_top_left(BitMatrix*, BitMatrix*, int)':
+../src/BitMatrixSkeleton.cpp:232:13: warning: statement has no effect [-Wunused-value]
+     for (col; col < 1; col++) {
+             ^
+../src/BitMatrixSkeleton.cpp: In function 'int iteration1_edge_top_right(BitMatrix*, BitMatrix*, int)':
+../src/BitMatrixSkeleton.cpp:306:13: warning: statement has no effect [-Wunused-value]
+     for (col; col < img->getColumns(); col++) {
+             ^
+../src/BitMatrixSkeleton.cpp: In function 'int iteration1_edge_bottom_left(BitMatrix*, BitMatrix*, int)':
+../src/BitMatrixSkeleton.cpp:385:13: warning: statement has no effect [-Wunused-value]
+     for (col; col < 1; col++) {
+             ^
+../src/BitMatrixSkeleton.cpp: In function 'int iteration1_edge_bottom_right(BitMatrix*, BitMatrix*, int)':
+../src/BitMatrixSkeleton.cpp:468:13: warning: statement has no effect [-Wunused-value]
+     for (col; col < img->getColumns(); col++) {
+             ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:12:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/BitMatrixSkeleton.h:17,
+                 from ../src/BitMatrixSkeleton.cpp:17:
+C:\Programming\pixy\src\device\main_m4\inc/bits.h: At global scope:
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:11:25: warning: 'void SetFlag(void*, size_t)' defined but not used [-Wunused-function]
+ static void  __fastcall SetFlag(register void* _Data, register size_t _FlagPosition){
+                         ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:15:24: warning: 'void UnsetFlag(void*, size_t)' defined but not used [-Wunused-function]
+ static void __fastcall UnsetFlag(register void* _Data, register size_t _FlagPosition){
+                        ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:23:24: warning: 'void ChangeFlag(void*, size_t)' defined but not used [-Wunused-function]
+ static void __fastcall ChangeFlag(register void* _Data, register size_t _FlagPosition){
+                        ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:13:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/BitMatrixSkeleton.h:17,
+                 from ../src/BitMatrixSkeleton.cpp:17:
+C:\Programming\pixy\src\device\main_m4\inc/rgb2hsv.h:24:17: warning: 'HSVcolor rgb2hsv(RGBcolor)' defined but not used [-Wunused-function]
+ static HSVcolor rgb2hsv(RGBcolor rgbColor) {
+                 ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrixSkeleton.h:17:0,
+                 from ../src/BitMatrixSkeleton.cpp:17:
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:1035:13: warning: 'void baiernToBitmatrixDownscale_minPooling(BitMatrix*, uint8_t*, uint16_t, uint16_t, size_t, float, float)' defined but not used [-Wunused-function]
+ static void baiernToBitmatrixDownscale_minPooling(BitMatrix* _dst, uint8_t* _src, uint16_t height, uint16_t width, size_t downscale_rate, float min_black_treshold_percentual, float window_black_pixels_percentual) {
+             ^
+Finished building: ../src/BitMatrixSkeleton.cpp
+ 
+Building file: ../src/LinesRoutine.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/LinesRoutine.d" -MT"src/LinesRoutine.o" -MT"src/LinesRoutine.d" -o "src/LinesRoutine.o" "../src/LinesRoutine.cpp"
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:11:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/LinesRoutine.cpp:1:
+C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:28:0: warning: "M_PI" redefined
+ #define M_PI       3.14159265358979323846f   // pi
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:20:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:11,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/LinesRoutine.cpp:1:
+c:\nxp\lpcxpresso_7.6.2_326\lpcxpresso\tools\arm-none-eabi\include\math.h:559:0: note: this is the location of the previous definition
+ #define M_PI  3.14159265358979323846
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:11:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/LinesRoutine.cpp:1:
+C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:29:0: warning: "M_PI_2" redefined
+ #define M_PI_2     1.57079632679489661923f   // pi/2
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:20:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:11,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/LinesRoutine.cpp:1:
+c:\nxp\lpcxpresso_7.6.2_326\lpcxpresso\tools\arm-none-eabi\include\math.h:560:0: note: this is the location of the previous definition
+ #define M_PI_2  1.57079632679489661923
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:12:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/LinesRoutine.cpp:1:
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:11:84: warning: '__fastcall__' attribute directive ignored [-Wattributes]
+ static void  __fastcall SetFlag(register void* _Data, register size_t _FlagPosition){
+                                                                                    ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:15:85: warning: '__fastcall__' attribute directive ignored [-Wattributes]
+ static void __fastcall UnsetFlag(register void* _Data, register size_t _FlagPosition){
+                                                                                     ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:19:92: warning: '__fastcall__' attribute directive ignored [-Wattributes]
+ static unsigned char __fastcall GetFlag(register void* _Data, register size_t _FlagPosition){
+                                                                                            ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:23:86: warning: '__fastcall__' attribute directive ignored [-Wattributes]
+ static void __fastcall ChangeFlag(register void* _Data, register size_t _FlagPosition){
+                                                                                      ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5:0,
+                 from ../src/LinesRoutine.cpp:1:
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:975:39: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  size_t getFirstSetPixel_last_index = 0;
+                                       ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'unsigned int BitMatrix::getBlockValue(size_t)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:229:120: warning: suggest parentheses around '-' inside '>>' [-Wparentheses]
+    return this->data.at(index) & (((BITARRAY_DATATYPE)BITARRAY_DATATYPE_MAX_VALUE) >> ((size_t)BITARRAY_DATATYPE_BITS) - (this->bitSize() % (size_t)BITARRAY_DATATYPE_BITS));
+                                                                                                                        ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'void BitMatrix::setBlockValue(size_t, unsigned int)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:241:99: warning: suggest parentheses around '-' inside '>>' [-Wparentheses]
+    value &= (((BITARRAY_DATATYPE)BITARRAY_DATATYPE_MAX_VALUE) >> ((size_t)BITARRAY_DATATYPE_BITS) - (this->bitSize() % (size_t)BITARRAY_DATATYPE_BITS));
+                                                                                                   ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'bool BitMatrix::floodFillOnesDelete(size_t, size_t, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:536:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   Point2D_int16_t p = Point2D_int16_t{ (int16_t)row, (int16_t)col };
+                                      ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In static member function 'static std::vector<Point2D_int>* BitMatrix::findLongestPath(BitMatrix*, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:702:22: warning: unused variable 'temp_local_path' [-Wunused-variable]
+   struct _local_path temp_local_path, *temp_ptr_local_path;
+                      ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In static member function 'static Point2D_Distance BitMatrix::bfs(Point2D_int*, BitMatrix*, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:787:31: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   q.push_back(Point2D_Distance{ *start, 0.0f });
+                               ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:812:34: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+      q.push_back(Point2D_Distance{ Point2D_int{(int)newX, (int)newY}, dist + (float)1.0 });
+                                  ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:812:47: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+      q.push_back(Point2D_Distance{ Point2D_int{(int)newX, (int)newY}, dist + (float)1.0 });
+                                               ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:817:10: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return { farthest, (float)maxDist };
+          ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'BitMatrixPosition BitMatrix::getFirstSetPixel()':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:823:28: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+    return BitMatrixPosition{ 0, 0, false };
+                            ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:853:27: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return BitMatrixPosition{ 0, 0, false };
+                           ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'BitMatrixPosition BitMatrix::getNextSetPixel(size_t, size_t)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:861:71: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   BitMatrixIndex start_index = this->PositionToIndex(BitMatrixPosition{row, col, true});
+                                                                       ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:865:28: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+    return BitMatrixPosition{ 0, 0, false };
+                            ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:889:27: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return BitMatrixPosition{ 0, 0, false };
+                           ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In static member function 'static void BitMatrix::downscale(BitMatrix*, BitMatrix*, size_t, float)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:898:21: warning: unused variable 'up_word' [-Wunused-variable]
+   BITARRAY_DATATYPE up_word, mid_word, down_word;
+                     ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:898:30: warning: unused variable 'mid_word' [-Wunused-variable]
+   BITARRAY_DATATYPE up_word, mid_word, down_word;
+                              ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:898:40: warning: unused variable 'down_word' [-Wunused-variable]
+   BITARRAY_DATATYPE up_word, mid_word, down_word;
+                                        ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:899:21: warning: unused variable 'right_up_word' [-Wunused-variable]
+   BITARRAY_DATATYPE right_up_word, right_mid_word, right_down_word;
+                     ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:899:36: warning: unused variable 'right_mid_word' [-Wunused-variable]
+   BITARRAY_DATATYPE right_up_word, right_mid_word, right_down_word;
+                                    ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:899:52: warning: unused variable 'right_down_word' [-Wunused-variable]
+   BITARRAY_DATATYPE right_up_word, right_mid_word, right_down_word;
+                                                    ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'BitMatrixPosition BitMatrix::indexToPosition(size_t, size_t)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:949:27: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return BitMatrixPosition{ row , col, valid };
+                           ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'BitMatrixIndex BitMatrix::PositionToIndex(BitMatrixPosition)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:956:25: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+    return BitMatrixIndex{ 0, 0, false };
+                         ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In static member function 'static bool BitMatrix::isValid(int, int, BitMatrix*, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:1027:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (col < 0 || col >= main->getColumns() || row < 0 || row >= main->getRows()) {
+                      ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:1027:62: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (col < 0 || col >= main->getColumns() || row < 0 || row >= main->getRows()) {
+                                                              ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In function 'void baiernToBitmatrixDownscale_minPooling(BitMatrix*, uint8_t*, uint16_t, uint16_t, size_t, float, float)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:1036:11: warning: unused variable 'rgb_pixel' [-Wunused-variable]
+  RGBcolor rgb_pixel;
+           ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'bool BitMatrix::floodFillOnesDelete(size_t, size_t, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:630:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:12:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/LinesRoutine.cpp:1:
+C:\Programming\pixy\src\device\main_m4\inc/bits.h: At global scope:
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:11:25: warning: 'void SetFlag(void*, size_t)' defined but not used [-Wunused-function]
+ static void  __fastcall SetFlag(register void* _Data, register size_t _FlagPosition){
+                         ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:15:24: warning: 'void UnsetFlag(void*, size_t)' defined but not used [-Wunused-function]
+ static void __fastcall UnsetFlag(register void* _Data, register size_t _FlagPosition){
+                        ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:23:24: warning: 'void ChangeFlag(void*, size_t)' defined but not used [-Wunused-function]
+ static void __fastcall ChangeFlag(register void* _Data, register size_t _FlagPosition){
+                        ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:13:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/LinesRoutine.cpp:1:
+C:\Programming\pixy\src\device\main_m4\inc/rgb2hsv.h:24:17: warning: 'HSVcolor rgb2hsv(RGBcolor)' defined but not used [-Wunused-function]
+ static HSVcolor rgb2hsv(RGBcolor rgbColor) {
+                 ^
+Finished building: ../src/LinesRoutine.cpp
+ 
 Building file: ../src/analogdig.cpp
 Invoking: MCU C++ Compiler
 arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/analogdig.d" -MT"src/analogdig.o" -MT"src/analogdig.d" -o "src/analogdig.o" "../src/analogdig.cpp"
 Finished building: ../src/analogdig.cpp
+ 
+Building file: ../src/approxPolyDP.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/approxPolyDP.d" -MT"src/approxPolyDP.o" -MT"src/approxPolyDP.d" -o "src/approxPolyDP.o" "../src/approxPolyDP.cpp"
+In file included from C:\Programming\pixy\src\device\main_m4\inc/approxPolyDP.h:3:0,
+                 from ../src/approxPolyDP.cpp:1:
+C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:28:0: warning: "M_PI" redefined
+ #define M_PI       3.14159265358979323846f   // pi
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:20:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/approxPolyDP.h:3,
+                 from ../src/approxPolyDP.cpp:1:
+c:\nxp\lpcxpresso_7.6.2_326\lpcxpresso\tools\arm-none-eabi\include\math.h:559:0: note: this is the location of the previous definition
+ #define M_PI  3.14159265358979323846
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/approxPolyDP.h:3:0,
+                 from ../src/approxPolyDP.cpp:1:
+C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:29:0: warning: "M_PI_2" redefined
+ #define M_PI_2     1.57079632679489661923f   // pi/2
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:20:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/approxPolyDP.h:3,
+                 from ../src/approxPolyDP.cpp:1:
+c:\nxp\lpcxpresso_7.6.2_326\lpcxpresso\tools\arm-none-eabi\include\math.h:560:0: note: this is the location of the previous definition
+ #define M_PI_2  1.57079632679489661923
+ ^
+Finished building: ../src/approxPolyDP.cpp
  
 Building file: ../src/button.cpp
 Invoking: MCU C++ Compiler
@@ -71,6 +431,69 @@ arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG
 ../src/exec.cpp:94:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
 Finished building: ../src/exec.cpp
  
+Building file: ../src/geometry2D.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/geometry2D.d" -MT"src/geometry2D.o" -MT"src/geometry2D.d" -o "src/geometry2D.o" "../src/geometry2D.cpp"
+In file included from ../src/geometry2D.cpp:17:0:
+C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:28:0: warning: "M_PI" redefined
+ #define M_PI       3.14159265358979323846f   // pi
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:20:0,
+                 from ../src/geometry2D.cpp:17:
+c:\nxp\lpcxpresso_7.6.2_326\lpcxpresso\tools\arm-none-eabi\include\math.h:559:0: note: this is the location of the previous definition
+ #define M_PI  3.14159265358979323846
+ ^
+In file included from ../src/geometry2D.cpp:17:0:
+C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:29:0: warning: "M_PI_2" redefined
+ #define M_PI_2     1.57079632679489661923f   // pi/2
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:20:0,
+                 from ../src/geometry2D.cpp:17:
+c:\nxp\lpcxpresso_7.6.2_326\lpcxpresso\tools\arm-none-eabi\include\math.h:560:0: note: this is the location of the previous definition
+ #define M_PI_2  1.57079632679489661923
+ ^
+../src/geometry2D.cpp: In function 'LineABC points2lineABC(Point2D, Point2D)':
+../src/geometry2D.cpp:627:17: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return LineABC{ 0.0f, 0.0f, 0.0f };
+                 ^
+../src/geometry2D.cpp: In function 'int isPointOnSegment(LineSegment, Point2D)':
+../src/geometry2D.cpp:843:56: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+   ((point.x < segment.A.x) != (point.x < segment.B.x)) &&
+                                                        ^
+../src/geometry2D.cpp: In function 'LineSegmentsDistancePoints distancePointsBwSegments(LineSegment, LineSegment)':
+../src/geometry2D.cpp:857:6: warning: variable 'projectionPresentSeg1A' set but not used [-Wunused-but-set-variable]
+  int projectionPresentSeg1A, projectionPresentSeg1B, projectionPresentSeg2A, projectionPresentSeg2B, minFound, maxFound, minSet, maxSet;
+      ^
+../src/geometry2D.cpp:857:30: warning: variable 'projectionPresentSeg1B' set but not used [-Wunused-but-set-variable]
+  int projectionPresentSeg1A, projectionPresentSeg1B, projectionPresentSeg2A, projectionPresentSeg2B, minFound, maxFound, minSet, maxSet;
+                              ^
+../src/geometry2D.cpp:857:54: warning: variable 'projectionPresentSeg2A' set but not used [-Wunused-but-set-variable]
+  int projectionPresentSeg1A, projectionPresentSeg1B, projectionPresentSeg2A, projectionPresentSeg2B, minFound, maxFound, minSet, maxSet;
+                                                      ^
+../src/geometry2D.cpp:857:78: warning: variable 'projectionPresentSeg2B' set but not used [-Wunused-but-set-variable]
+  int projectionPresentSeg1A, projectionPresentSeg1B, projectionPresentSeg2A, projectionPresentSeg2B, minFound, maxFound, minSet, maxSet;
+                                                                              ^
+../src/geometry2D.cpp:857:102: warning: variable 'minFound' set but not used [-Wunused-but-set-variable]
+  int projectionPresentSeg1A, projectionPresentSeg1B, projectionPresentSeg2A, projectionPresentSeg2B, minFound, maxFound, minSet, maxSet;
+                                                                                                      ^
+../src/geometry2D.cpp:857:112: warning: variable 'maxFound' set but not used [-Wunused-but-set-variable]
+  int projectionPresentSeg1A, projectionPresentSeg1B, projectionPresentSeg2A, projectionPresentSeg2B, minFound, maxFound, minSet, maxSet;
+                                                                                                                ^
+../src/geometry2D.cpp: In function 'IntersectionPoints2D_2 intersectionBwCircles(Point2D, float, Point2D, float)':
+../src/geometry2D.cpp:1140:70: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+  IntersectionPoints2D_2 intersections_result = IntersectionPoints2D_2{};
+                                                                      ^
+../src/geometry2D.cpp:1154:48: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   intersections_result = IntersectionPoints2D_2{};
+                                                ^
+../src/geometry2D.cpp:1159:48: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   intersections_result = IntersectionPoints2D_2{};
+                                                ^
+../src/geometry2D.cpp:1168:48: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   intersections_result = IntersectionPoints2D_2{};
+                                                ^
+Finished building: ../src/geometry2D.cpp
+ 
 Building file: ../src/i2c.cpp
 Invoking: MCU C++ Compiler
 arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -MT"src/i2c.d" -o "src/i2c.o" "../src/i2c.cpp"
@@ -80,22 +503,22 @@ Building file: ../src/main_m4.cpp
 Invoking: MCU C++ Compiler
 arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/main_m4.d" -MT"src/main_m4.o" -MT"src/main_m4.d" -o "src/main_m4.o" "../src/main_m4.cpp"
 ../src/main_m4.cpp: In function 'int main()':
-../src/main_m4.cpp:57:11: warning: unused variable 'major' [-Wunused-variable]
+../src/main_m4.cpp:58:11: warning: unused variable 'major' [-Wunused-variable]
   uint16_t major, minor, build;
            ^
-../src/main_m4.cpp:57:18: warning: unused variable 'minor' [-Wunused-variable]
+../src/main_m4.cpp:58:18: warning: unused variable 'minor' [-Wunused-variable]
   uint16_t major, minor, build;
                   ^
-../src/main_m4.cpp:57:25: warning: unused variable 'build' [-Wunused-variable]
+../src/main_m4.cpp:58:25: warning: unused variable 'build' [-Wunused-variable]
   uint16_t major, minor, build;
                          ^
-../src/main_m4.cpp:58:6: warning: unused variable 'i' [-Wunused-variable]
+../src/main_m4.cpp:59:6: warning: unused variable 'i' [-Wunused-variable]
   int i, res, count;
       ^
-../src/main_m4.cpp:58:9: warning: unused variable 'res' [-Wunused-variable]
+../src/main_m4.cpp:59:9: warning: unused variable 'res' [-Wunused-variable]
   int i, res, count;
          ^
-../src/main_m4.cpp:58:14: warning: unused variable 'count' [-Wunused-variable]
+../src/main_m4.cpp:59:14: warning: unused variable 'count' [-Wunused-variable]
   int i, res, count;
               ^
 Finished building: ../src/main_m4.cpp
@@ -137,6 +560,218 @@ arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG
   if (m_prevError!=0x80000000)
                  ^
 Finished building: ../src/progpt.cpp
+ 
+Building file: ../src/progskeleton.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -D__MULTICORE_MASTER -DIPC_MASTER -DPIXY -D__NEWLIB__ -DNDEBUG -D__CODE_RED -DCORE_M4 -DCPP_USE_HEAP -D__LPC43XX__ -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER_SLAVE_M0APP -I"C:\Programming\pixy\src\device\main_m4\inc" -I../../libpixy_m4/inc -I../../common/inc -I../../../common/inc -O1 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"src/progskeleton.d" -MT"src/progskeleton.o" -MT"src/progskeleton.d" -o "src/progskeleton.o" "../src/progskeleton.cpp"
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:11:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/progskeleton.cpp:8:
+C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:24:0: warning: "MIN" redefined
+ #define MIN(a,b) (((a)<(b))?(a):(b))
+ ^
+In file included from ../../common/inc/lpc43xx_uart.h:53:0,
+                 from ../../common/inc/debug_frmwrk.h:51,
+                 from C:\Programming\pixy\src\device\main_m4\inc/exec.h:20,
+                 from C:\Programming\pixy\src\device\main_m4\inc/progskeleton.h:5,
+                 from ../src/progskeleton.cpp:2:
+../../common/inc/lpc_types.h:158:0: note: this is the location of the previous definition
+ #define MIN(a, b) (((a) < (b)) ? (a) : (b))
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:11:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/progskeleton.cpp:8:
+C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:25:0: warning: "MAX" redefined
+ #define MAX(a,b) (((a)>(b))?(a):(b))
+ ^
+In file included from ../../common/inc/lpc43xx_uart.h:53:0,
+                 from ../../common/inc/debug_frmwrk.h:51,
+                 from C:\Programming\pixy\src\device\main_m4\inc/exec.h:20,
+                 from C:\Programming\pixy\src\device\main_m4\inc/progskeleton.h:5,
+                 from ../src/progskeleton.cpp:2:
+../../common/inc/lpc_types.h:157:0: note: this is the location of the previous definition
+ #define MAX(a, b) (((a) > (b)) ? (a) : (b))
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:11:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/progskeleton.cpp:8:
+C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:28:0: warning: "M_PI" redefined
+ #define M_PI       3.14159265358979323846f   // pi
+ ^
+In file included from ../../../common/inc/blob.h:58:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/conncomp.h:19,
+                 from ../src/progskeleton.cpp:5:
+c:\nxp\lpcxpresso_7.6.2_326\lpcxpresso\tools\arm-none-eabi\include\math.h:559:0: note: this is the location of the previous definition
+ #define M_PI  3.14159265358979323846
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:11:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/progskeleton.cpp:8:
+C:\Programming\pixy\src\device\main_m4\inc/geometry2D.h:29:0: warning: "M_PI_2" redefined
+ #define M_PI_2     1.57079632679489661923f   // pi/2
+ ^
+In file included from ../../../common/inc/blob.h:58:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/conncomp.h:19,
+                 from ../src/progskeleton.cpp:5:
+c:\nxp\lpcxpresso_7.6.2_326\lpcxpresso\tools\arm-none-eabi\include\math.h:560:0: note: this is the location of the previous definition
+ #define M_PI_2  1.57079632679489661923
+ ^
+In file included from ../src/progskeleton.cpp:8:0:
+C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:10:0: warning: "CAM_RES2_WIDTH" redefined
+ #define CAM_RES2_WIDTH 316
+ ^
+In file included from ../../libpixy_m4/inc/camera.h:22:0,
+                 from ../src/progskeleton.cpp:4:
+../../common/inc/cameravals.h:37:0: note: this is the location of the previous definition
+ #define CAM_RES2_WIDTH          320
+ ^
+In file included from ../src/progskeleton.cpp:8:0:
+C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:11:0: warning: "CAM_RES2_HEIGHT" redefined
+ #define CAM_RES2_HEIGHT 208
+ ^
+In file included from ../../libpixy_m4/inc/camera.h:22:0,
+                 from ../src/progskeleton.cpp:4:
+../../common/inc/cameravals.h:38:0: note: this is the location of the previous definition
+ #define CAM_RES2_HEIGHT         200
+ ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:12:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/progskeleton.cpp:8:
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:11:84: warning: '__fastcall__' attribute directive ignored [-Wattributes]
+ static void  __fastcall SetFlag(register void* _Data, register size_t _FlagPosition){
+                                                                                    ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:15:85: warning: '__fastcall__' attribute directive ignored [-Wattributes]
+ static void __fastcall UnsetFlag(register void* _Data, register size_t _FlagPosition){
+                                                                                     ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:19:92: warning: '__fastcall__' attribute directive ignored [-Wattributes]
+ static unsigned char __fastcall GetFlag(register void* _Data, register size_t _FlagPosition){
+                                                                                            ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:23:86: warning: '__fastcall__' attribute directive ignored [-Wattributes]
+ static void __fastcall ChangeFlag(register void* _Data, register size_t _FlagPosition){
+                                                                                      ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5:0,
+                 from ../src/progskeleton.cpp:8:
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:975:39: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  size_t getFirstSetPixel_last_index = 0;
+                                       ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'unsigned int BitMatrix::getBlockValue(size_t)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:229:120: warning: suggest parentheses around '-' inside '>>' [-Wparentheses]
+    return this->data.at(index) & (((BITARRAY_DATATYPE)BITARRAY_DATATYPE_MAX_VALUE) >> ((size_t)BITARRAY_DATATYPE_BITS) - (this->bitSize() % (size_t)BITARRAY_DATATYPE_BITS));
+                                                                                                                        ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'void BitMatrix::setBlockValue(size_t, unsigned int)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:241:99: warning: suggest parentheses around '-' inside '>>' [-Wparentheses]
+    value &= (((BITARRAY_DATATYPE)BITARRAY_DATATYPE_MAX_VALUE) >> ((size_t)BITARRAY_DATATYPE_BITS) - (this->bitSize() % (size_t)BITARRAY_DATATYPE_BITS));
+                                                                                                   ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'bool BitMatrix::floodFillOnesDelete(size_t, size_t, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:536:38: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   Point2D_int16_t p = Point2D_int16_t{ (int16_t)row, (int16_t)col };
+                                      ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In static member function 'static std::vector<Point2D_int>* BitMatrix::findLongestPath(BitMatrix*, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:702:22: warning: unused variable 'temp_local_path' [-Wunused-variable]
+   struct _local_path temp_local_path, *temp_ptr_local_path;
+                      ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In static member function 'static Point2D_Distance BitMatrix::bfs(Point2D_int*, BitMatrix*, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:787:31: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   q.push_back(Point2D_Distance{ *start, 0.0f });
+                               ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:812:34: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+      q.push_back(Point2D_Distance{ Point2D_int{(int)newX, (int)newY}, dist + (float)1.0 });
+                                  ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:812:47: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+      q.push_back(Point2D_Distance{ Point2D_int{(int)newX, (int)newY}, dist + (float)1.0 });
+                                               ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:817:10: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return { farthest, (float)maxDist };
+          ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'BitMatrixPosition BitMatrix::getFirstSetPixel()':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:823:28: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+    return BitMatrixPosition{ 0, 0, false };
+                            ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:853:27: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return BitMatrixPosition{ 0, 0, false };
+                           ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'BitMatrixPosition BitMatrix::getNextSetPixel(size_t, size_t)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:861:71: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   BitMatrixIndex start_index = this->PositionToIndex(BitMatrixPosition{row, col, true});
+                                                                       ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:865:28: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+    return BitMatrixPosition{ 0, 0, false };
+                            ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:889:27: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return BitMatrixPosition{ 0, 0, false };
+                           ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In static member function 'static void BitMatrix::downscale(BitMatrix*, BitMatrix*, size_t, float)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:898:21: warning: unused variable 'up_word' [-Wunused-variable]
+   BITARRAY_DATATYPE up_word, mid_word, down_word;
+                     ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:898:30: warning: unused variable 'mid_word' [-Wunused-variable]
+   BITARRAY_DATATYPE up_word, mid_word, down_word;
+                              ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:898:40: warning: unused variable 'down_word' [-Wunused-variable]
+   BITARRAY_DATATYPE up_word, mid_word, down_word;
+                                        ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:899:21: warning: unused variable 'right_up_word' [-Wunused-variable]
+   BITARRAY_DATATYPE right_up_word, right_mid_word, right_down_word;
+                     ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:899:36: warning: unused variable 'right_mid_word' [-Wunused-variable]
+   BITARRAY_DATATYPE right_up_word, right_mid_word, right_down_word;
+                                    ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:899:52: warning: unused variable 'right_down_word' [-Wunused-variable]
+   BITARRAY_DATATYPE right_up_word, right_mid_word, right_down_word;
+                                                    ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'BitMatrixPosition BitMatrix::indexToPosition(size_t, size_t)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:949:27: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   return BitMatrixPosition{ row , col, valid };
+                           ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In member function 'BitMatrixIndex BitMatrix::PositionToIndex(BitMatrixPosition)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:956:25: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+    return BitMatrixIndex{ 0, 0, false };
+                         ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In static member function 'static bool BitMatrix::isValid(int, int, BitMatrix*, BitMatrix*)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:1027:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (col < 0 || col >= main->getColumns() || row < 0 || row >= main->getRows()) {
+                      ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:1027:62: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (col < 0 || col >= main->getColumns() || row < 0 || row >= main->getRows()) {
+                                                              ^
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h: In function 'void baiernToBitmatrixDownscale_minPooling(BitMatrix*, uint8_t*, uint16_t, uint16_t, size_t, float, float)':
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:1036:11: warning: unused variable 'rgb_pixel' [-Wunused-variable]
+  RGBcolor rgb_pixel;
+           ^
+../src/progskeleton.cpp: At global scope:
+../src/progskeleton.cpp:17:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+../src/progskeleton.cpp:17:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../src/progskeleton.cpp: In function 'int skeletonLoop()':
+../src/progskeleton.cpp:31:12: warning: unused variable 'frame_size' [-Wunused-variable]
+     size_t frame_size = CAM_RES2_WIDTH*CAM_RES2_HEIGHT;
+            ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:12:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/progskeleton.cpp:8:
+C:\Programming\pixy\src\device\main_m4\inc/bits.h: At global scope:
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:11:25: warning: 'void SetFlag(void*, size_t)' defined but not used [-Wunused-function]
+ static void  __fastcall SetFlag(register void* _Data, register size_t _FlagPosition){
+                         ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:15:24: warning: 'void UnsetFlag(void*, size_t)' defined but not used [-Wunused-function]
+ static void __fastcall UnsetFlag(register void* _Data, register size_t _FlagPosition){
+                        ^
+C:\Programming\pixy\src\device\main_m4\inc/bits.h:23:24: warning: 'void ChangeFlag(void*, size_t)' defined but not used [-Wunused-function]
+ static void __fastcall ChangeFlag(register void* _Data, register size_t _FlagPosition){
+                        ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:13:0,
+                 from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5,
+                 from ../src/progskeleton.cpp:8:
+C:\Programming\pixy\src\device\main_m4\inc/rgb2hsv.h:24:17: warning: 'HSVcolor rgb2hsv(RGBcolor)' defined but not used [-Wunused-function]
+ static HSVcolor rgb2hsv(RGBcolor rgbColor) {
+                 ^
+In file included from C:\Programming\pixy\src\device\main_m4\inc/LinesRoutine.h:5:0,
+                 from ../src/progskeleton.cpp:8:
+C:\Programming\pixy\src\device\main_m4\inc/BitMatrix.h:1035:13: warning: 'void baiernToBitmatrixDownscale_minPooling(BitMatrix*, uint8_t*, uint16_t, uint16_t, size_t, float, float)' defined but not used [-Wunused-function]
+ static void baiernToBitmatrixDownscale_minPooling(BitMatrix* _dst, uint8_t* _src, uint16_t height, uint16_t width, size_t downscale_rate, float min_black_treshold_percentual, float window_black_pixels_percentual) {
+             ^
+Finished building: ../src/progskeleton.cpp
  
 Building file: ../src/progvideo.cpp
 Invoking: MCU C++ Compiler
@@ -188,7 +823,7 @@ Finished building: ../src/uart.cpp
  
 Building target: main_m4.axf
 Invoking: MCU C++ Linker
-arm-none-eabi-c++ -nostdlib -L"C:\Programming\pixy\src\device\main_m4\src" -L"C:\Programming\pixy\src\device\libpixy_m4\Release" -Xlinker -Map="main_m4.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "SPIFI_link_template.ld" -L ../linkscripts -o "main_m4.axf"  ./src/analogdig.o ./src/button.o ./src/conncomp.o ./src/cr_cpp_config.o ./src/cr_start_m0.o ./src/cr_startup_lpc43xx.o ./src/exec.o ./src/i2c.o ./src/main_m4.o ./src/progblobs.o ./src/progchase.o ./src/progpt.o ./src/progvideo.o ./src/serial.o ./src/spi.o ./src/uart.o  C:/Programming/pixy/src/device/main_m0/Release/main_m0.axf.o -llibpixy_m4 -lfalcon_m4_spifi_drv
+arm-none-eabi-c++ -nostdlib -L"C:\Programming\pixy\src\device\main_m4\src" -L"C:\Programming\pixy\src\device\libpixy_m4\Release" -Xlinker -Map="main_m4.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "SPIFI_link_template.ld" -L ../linkscripts -o "main_m4.axf"  ./src/BitMatrixSkeleton.o ./src/LinesRoutine.o ./src/analogdig.o ./src/approxPolyDP.o ./src/button.o ./src/conncomp.o ./src/cr_cpp_config.o ./src/cr_start_m0.o ./src/cr_startup_lpc43xx.o ./src/exec.o ./src/geometry2D.o ./src/i2c.o ./src/main_m4.o ./src/progblobs.o ./src/progchase.o ./src/progpt.o ./src/progskeleton.o ./src/progvideo.o ./src/serial.o ./src/spi.o ./src/uart.o  C:/Programming/pixy/src/device/main_m0/Release/main_m0.axf.o -llibpixy_m4 -lfalcon_m4_spifi_drv
 c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(spifi_rom_api.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
 c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(falcon_details.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
 c:/nxp/lpcxpresso_7.6.2_326/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: warning: C:\Programming\pixy\src\device\main_m4\src\libfalcon_m4_spifi_drv.a(amic.o) uses 2-byte wchar_t yet the output is to use 4-byte wchar_t; use of wchar_t values across objects may fail
@@ -208,10 +843,10 @@ Finished building target: main_m4.axf
 Performing post-build steps
 arm-none-eabi-size "main_m4.axf" ; arm-none-eabi-objcopy -v -O binary "main_m4.axf" "main_m4.bin" ; checksum -p LPC4330 -d "main_m4.bin" ; arm-none-eabi-objcopy -v -O ihex "main_m4.axf" pixy_firmware.hex
    text	   data	    bss	    dec	    hex	filename
- 104332	   2316	   4936	 111584	  1b3e0	main_m4.axf
+ 124680	   2424	   6664	 133768	  20a88	main_m4.axf
 copy from `main_m4.axf' [elf32-littlearm] to `main_m4.bin' [binary]
 Created checksum 0x67ff764a at offset 0x1c in file main_m4.bincopy from `main_m4.axf' [elf32-littlearm] to `pixy_firmware.hex' [ihex]
  
 
-15:42:14 Build Finished (took 10s.508ms)
+10:28:21 Build Finished (took 9s.669ms)
 

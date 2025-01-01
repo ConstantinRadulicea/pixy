@@ -19,6 +19,12 @@
 		<item value="0" key="y"/>
 		<item value="636" key="x"/>
 	</section>
+	<section name="org.eclipse.cdt.internal.ui.includebrowser.IBViewPart">
+		<item value="false" key="includedBy"/>
+		<item value="false" key="inactiveFilter"/>
+		<item value="false" key="showFolders"/>
+		<item value="false" key="systemFilter"/>
+	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
 </section>

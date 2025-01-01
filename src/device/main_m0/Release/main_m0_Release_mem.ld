@@ -1,10 +1,10 @@
 /*
  * GENERATED FILE - DO NOT EDIT
- * (c) Code Red Technologies Ltd, 2008-2024
- * (c) NXP Semiconductors 2013-2024
+ * (c) Code Red Technologies Ltd, 2008-2025
+ * (c) NXP Semiconductors 2013-2025
  * Linker script memory definitions
  * Created from LinkMemoryTemplate
- * By LPCXpresso v7.6.2 [Build 326] [2015-02-02]  on Tue Dec 31 15:41:57 EET 2024)
+ * By LPCXpresso v7.6.2 [Build 326] [2015-02-02]  on Wed Jan 01 10:28:08 EET 2025)
 */
 
 MEMORY

@@ -132,6 +132,27 @@
 						<entry kind="macro" name="__MULTICORE_MASTER_SLAVE_M0APP" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
 					</resource>
+					<resource project-relative-path="src/progskeleton.cpp">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/libpixy_m4/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/Programming/pixy/src/device/common/inc"/>
+						<entry kind="includePath" name="C:/Programming/pixy/src/common/inc"/>
+						<entry kind="macro" name="CORE_M4" value=""/>
+						<entry kind="macro" name="CPP_USE_HEAP" value=""/>
+						<entry kind="macro" name="IPC_MASTER" value=""/>
+						<entry kind="macro" name="LPC43_MULTICORE_M0APP" value=""/>
+						<entry kind="macro" name="NDEBUG" value=""/>
+						<entry kind="macro" name="PIXY" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC43XX__" value=""/>
+						<entry kind="macro" name="__MULTICORE_MASTER" value=""/>
+						<entry kind="macro" name="__MULTICORE_MASTER_SLAVE_M0APP" value=""/>
+						<entry kind="macro" name="__NEWLIB__" value=""/>
+					</resource>
 					<resource project-relative-path="src/serial.cpp">
 						<entry kind="includePath" name="/${ProjName}/inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
@@ -195,7 +216,70 @@
 						<entry kind="macro" name="__MULTICORE_MASTER_SLAVE_M0APP" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
 					</resource>
+					<resource project-relative-path="src/BitMatrixSkeleton.cpp">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/libpixy_m4/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/Programming/pixy/src/device/common/inc"/>
+						<entry kind="includePath" name="C:/Programming/pixy/src/common/inc"/>
+						<entry kind="macro" name="CORE_M4" value=""/>
+						<entry kind="macro" name="CPP_USE_HEAP" value=""/>
+						<entry kind="macro" name="IPC_MASTER" value=""/>
+						<entry kind="macro" name="LPC43_MULTICORE_M0APP" value=""/>
+						<entry kind="macro" name="NDEBUG" value=""/>
+						<entry kind="macro" name="PIXY" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC43XX__" value=""/>
+						<entry kind="macro" name="__MULTICORE_MASTER" value=""/>
+						<entry kind="macro" name="__MULTICORE_MASTER_SLAVE_M0APP" value=""/>
+						<entry kind="macro" name="__NEWLIB__" value=""/>
+					</resource>
 					<resource project-relative-path="src/exec.cpp">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/libpixy_m4/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/Programming/pixy/src/device/common/inc"/>
+						<entry kind="includePath" name="C:/Programming/pixy/src/common/inc"/>
+						<entry kind="macro" name="CORE_M4" value=""/>
+						<entry kind="macro" name="CPP_USE_HEAP" value=""/>
+						<entry kind="macro" name="IPC_MASTER" value=""/>
+						<entry kind="macro" name="LPC43_MULTICORE_M0APP" value=""/>
+						<entry kind="macro" name="NDEBUG" value=""/>
+						<entry kind="macro" name="PIXY" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC43XX__" value=""/>
+						<entry kind="macro" name="__MULTICORE_MASTER" value=""/>
+						<entry kind="macro" name="__MULTICORE_MASTER_SLAVE_M0APP" value=""/>
+						<entry kind="macro" name="__NEWLIB__" value=""/>
+					</resource>
+					<resource project-relative-path="src/geometry2D.cpp">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/libpixy_m4/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/Programming/pixy/src/device/common/inc"/>
+						<entry kind="includePath" name="C:/Programming/pixy/src/common/inc"/>
+						<entry kind="macro" name="CORE_M4" value=""/>
+						<entry kind="macro" name="CPP_USE_HEAP" value=""/>
+						<entry kind="macro" name="IPC_MASTER" value=""/>
+						<entry kind="macro" name="LPC43_MULTICORE_M0APP" value=""/>
+						<entry kind="macro" name="NDEBUG" value=""/>
+						<entry kind="macro" name="PIXY" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC43XX__" value=""/>
+						<entry kind="macro" name="__MULTICORE_MASTER" value=""/>
+						<entry kind="macro" name="__MULTICORE_MASTER_SLAVE_M0APP" value=""/>
+						<entry kind="macro" name="__NEWLIB__" value=""/>
+					</resource>
+					<resource project-relative-path="src/LinesRoutine.cpp">
 						<entry kind="includePath" name="/${ProjName}/inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
@@ -259,6 +343,27 @@
 						<entry kind="macro" name="__NEWLIB__" value=""/>
 					</resource>
 					<resource project-relative-path="src/progchase.cpp">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/libpixy_m4/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="C:/Programming/pixy/src/device/common/inc"/>
+						<entry kind="includePath" name="C:/Programming/pixy/src/common/inc"/>
+						<entry kind="macro" name="CORE_M4" value=""/>
+						<entry kind="macro" name="CPP_USE_HEAP" value=""/>
+						<entry kind="macro" name="IPC_MASTER" value=""/>
+						<entry kind="macro" name="LPC43_MULTICORE_M0APP" value=""/>
+						<entry kind="macro" name="NDEBUG" value=""/>
+						<entry kind="macro" name="PIXY" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC43XX__" value=""/>
+						<entry kind="macro" name="__MULTICORE_MASTER" value=""/>
+						<entry kind="macro" name="__MULTICORE_MASTER_SLAVE_M0APP" value=""/>
+						<entry kind="macro" name="__NEWLIB__" value=""/>
+					</resource>
+					<resource project-relative-path="src/approxPolyDP.cpp">
 						<entry kind="includePath" name="/${ProjName}/inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>

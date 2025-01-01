@@ -27,6 +27,7 @@
 #include "progvideo.h"
 #include "progblobs.h"
 #include "progpt.h"
+#include "progskeleton.h"
 #include "progchase.h"
 #include "param.h"
 #include "serial.h"
@@ -73,6 +74,7 @@ int main(void)
     exec_addProg(&g_progBlobs);
     ptLoadParams();
     exec_addProg(&g_progPt);
+	exec_addProg(&g_progSkeleton);
     exec_addProg(&g_progVideo, true);
 #if 0
     cam_setMode(CAM_MODE1);
